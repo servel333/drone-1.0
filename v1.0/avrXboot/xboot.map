@@ -1,0 +1,896 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o (exit)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+                              xboot.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+comm_mode           0x1               xboot.o
+buffer              0x100             xboot.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+ .text          0x00000000        0x0 xboot.o
+ .bss           0x00000000        0x0 xboot.o
+ .text.clear_buffer
+                0x00000000       0x12 xboot.o
+ .text          0x00000000        0x0 flash.o
+ .bss           0x00000000        0x0 flash.o
+ .text          0x00000000        0x0 eeprom_driver.o
+ .bss           0x00000000        0x0 eeprom_driver.o
+ .text.EEPROM_erase_page
+                0x00000000       0x26 eeprom_driver.o
+ .text          0x00000000        0x0 uart.o
+ .bss           0x00000000        0x0 uart.o
+ .text          0x00000000        0x0 i2c.o
+ .bss           0x00000000        0x0 i2c.o
+ .text.i2c_init
+                0x00000000       0x12 i2c.o
+ .text.i2c_deinit
+                0x00000000        0xc i2c.o
+ .text          0x00000000        0x0 fifo.o
+ .bss           0x00000000        0x0 fifo.o
+ .text.fifo_init
+                0x00000000       0x10 fifo.o
+ .text.fifo_deinit
+                0x00000000       0x16 fifo.o
+ .text.fifo_cur_char
+                0x00000000       0x38 fifo.o
+ .text.fifo_send_char
+                0x00000000       0x4a fifo.o
+ .text.fifo_send_char_blocking
+                0x00000000        0xc fifo.o
+ .text          0x00000000        0x0 watchdog.o
+ .bss           0x00000000        0x0 watchdog.o
+ .text.WDT_Disable
+                0x00000000       0x12 watchdog.o
+ .text          0x00000000        0x0 api.o
+ .bss           0x00000000        0x0 api.o
+ .bss           0x00000000        0x0 sp_driver.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+LOAD xboot.o
+LOAD flash.o
+LOAD eeprom_driver.o
+LOAD uart.o
+LOAD i2c.o
+LOAD fifo.o
+LOAD watchdog.o
+LOAD api.o
+LOAD sp_driver.o
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libm.a
+Address of section .text set to 0x10000
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00010000      0xeae
+ *(.vectors)
+ .vectors       0x00010000      0x1c8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+                0x00010000                __vector_default
+                0x00010000                __vectors
+ .vectors       0x000101c8       0x12 api.o
+                0x000101c8                api_jump_table
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x000101da                . = ALIGN (0x2)
+                0x000101da                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000101da        0x0 linker stubs
+ *(.trampolines*)
+                0x000101da                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000101da                __ctors_start = .
+ *(.ctors)
+                0x000101da                __ctors_end = .
+                0x000101da                __dtors_start = .
+ *(.dtors)
+                0x000101da                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000101da        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+                0x000101da                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000101da        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000101e6       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+                0x000101e6                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000101f6        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+ *(.init9)
+ *(.text)
+ .text          0x000101fe        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+                0x000101fe                __vector_38
+                0x000101fe                __vector_104
+                0x000101fe                __vector_22
+                0x000101fe                __vector_63
+                0x000101fe                __vector_28
+                0x000101fe                __vector_67
+                0x000101fe                __vector_1
+                0x000101fe                __vector_32
+                0x000101fe                __vector_75
+                0x000101fe                __vector_71
+                0x000101fe                __vector_91
+                0x000101fe                __vector_34
+                0x000101fe                __vector_62
+                0x000101fe                __vector_77
+                0x000101fe                __vector_102
+                0x000101fe                __vector_24
+                0x000101fe                __vector_12
+                0x000101fe                __vector_55
+                0x000101fe                __vector_69
+                0x000101fe                __vector_81
+                0x000101fe                __vector_90
+                0x000101fe                __vector_46
+                0x000101fe                __bad_interrupt
+                0x000101fe                __vector_72
+                0x000101fe                __vector_6
+                0x000101fe                __vector_110
+                0x000101fe                __vector_31
+                0x000101fe                __vector_92
+                0x000101fe                __vector_35
+                0x000101fe                __vector_78
+                0x000101fe                __vector_74
+                0x000101fe                __vector_39
+                0x000101fe                __vector_107
+                0x000101fe                __vector_3
+                0x000101fe                __vector_105
+                0x000101fe                __vector_98
+                0x000101fe                __vector_23
+                0x000101fe                __vector_68
+                0x000101fe                __vector_30
+                0x000101fe                __vector_73
+                0x000101fe                __vector_45
+                0x000101fe                __vector_25
+                0x000101fe                __vector_93
+                0x000101fe                __vector_61
+                0x000101fe                __vector_11
+                0x000101fe                __vector_54
+                0x000101fe                __vector_99
+                0x000101fe                __vector_13
+                0x000101fe                __vector_17
+                0x000101fe                __vector_19
+                0x000101fe                __vector_56
+                0x000101fe                __vector_7
+                0x000101fe                __vector_49
+                0x000101fe                __vector_41
+                0x000101fe                __vector_86
+                0x000101fe                __vector_100
+                0x000101fe                __vector_101
+                0x000101fe                __vector_64
+                0x000101fe                __vector_88
+                0x000101fe                __vector_109
+                0x000101fe                __vector_43
+                0x000101fe                __vector_27
+                0x000101fe                __vector_5
+                0x000101fe                __vector_113
+                0x000101fe                __vector_33
+                0x000101fe                __vector_76
+                0x000101fe                __vector_47
+                0x000101fe                __vector_52
+                0x000101fe                __vector_37
+                0x000101fe                __vector_95
+                0x000101fe                __vector_103
+                0x000101fe                __vector_96
+                0x000101fe                __vector_89
+                0x000101fe                __vector_108
+                0x000101fe                __vector_4
+                0x000101fe                __vector_44
+                0x000101fe                __vector_82
+                0x000101fe                __vector_106
+                0x000101fe                __vector_51
+                0x000101fe                __vector_9
+                0x000101fe                __vector_2
+                0x000101fe                __vector_21
+                0x000101fe                __vector_15
+                0x000101fe                __vector_66
+                0x000101fe                __vector_36
+                0x000101fe                __vector_79
+                0x000101fe                __vector_58
+                0x000101fe                __vector_70
+                0x000101fe                __vector_83
+                0x000101fe                __vector_29
+                0x000101fe                __vector_60
+                0x000101fe                __vector_40
+                0x000101fe                __vector_85
+                0x000101fe                __vector_94
+                0x000101fe                __vector_8
+                0x000101fe                __vector_26
+                0x000101fe                __vector_48
+                0x000101fe                __vector_112
+                0x000101fe                __vector_111
+                0x000101fe                __vector_80
+                0x000101fe                __vector_14
+                0x000101fe                __vector_84
+                0x000101fe                __vector_57
+                0x000101fe                __vector_53
+                0x000101fe                __vector_10
+                0x000101fe                __vector_50
+                0x000101fe                __vector_16
+                0x000101fe                __vector_59
+                0x000101fe                __vector_18
+                0x000101fe                __vector_97
+                0x000101fe                __vector_20
+                0x000101fe                __vector_42
+                0x000101fe                __vector_87
+                0x000101fe                __vector_65
+ .text          0x00010202      0x16a sp_driver.o
+                0x00010202                SP_ReadByte
+                0x0001020e                SP_ReadWord
+                0x0001021c                SP_ReadCalibrationByte
+                0x00010220                SP_ReadUserSignatureByte
+                0x00010224                SP_ReadFuseByte
+                0x0001023a                SP_WriteLockBits
+                0x00010242                SP_ReadLockBits
+                0x00010248                SP_EraseUserSignatureRow
+                0x00010250                SP_WriteUserSignatureRow
+                0x00010258                SP_EraseApplicationSection
+                0x00010266                SP_EraseApplicationPage
+                0x00010272                SP_LoadFlashWord
+                0x0001027c                SP_LoadFlashPage
+                0x000102a2                SP_ReadFlashPage
+                0x000102c4                SP_WriteApplicationPage
+                0x000102d0                SP_EraseWriteApplicationPage
+                0x000102dc                SP_EraseFlashBuffer
+                0x000102e4                SP_EraseBootPage
+                0x000102f0                SP_WriteBootPage
+                0x000102fc                SP_EraseWriteBootPage
+                0x00010308                SP_ApplicationCRC
+                0x0001030c                SP_BootCRC
+                0x00010310                SP_LockSPM
+                0x0001031e                SP_WaitForSPM
+                0x0001036c                . = ALIGN (0x2)
+ *(.text.*)
+ .text._crc16_update
+                0x0001036c       0x34 xboot.o
+ .text.get_char
+                0x000103a0       0x1e xboot.o
+                0x000103a0                get_char
+ .text.send_char
+                0x000103be       0x20 xboot.o
+                0x000103be                send_char
+ .text.get_2bytes
+                0x000103de       0x10 xboot.o
+                0x000103de                get_2bytes
+ .text.BlockLoad
+                0x000103ee      0x104 xboot.o
+                0x000103ee                BlockLoad
+ .text.BlockRead
+                0x000104f2      0x11c xboot.o
+                0x000104f2                BlockRead
+ .text.crc16_block
+                0x0001060e       0x8e xboot.o
+                0x0001060e                crc16_block
+ .text.install_firmware
+                0x0001069c      0x100 xboot.o
+                0x0001069c                install_firmware
+ .text.startup.main
+                0x0001079c      0x3bc xboot.o
+                0x0001079c                main
+ .text.Flash_ProgramPage
+                0x00010b58       0x44 flash.o
+                0x00010b58                Flash_ProgramPage
+ .text.NVM_EXEC
+                0x00010b9c       0x12 eeprom_driver.o
+ .text.wait_for_nvm
+                0x00010bae        0xa eeprom_driver.o
+                0x00010bae                wait_for_nvm
+ .text.flush_buffer
+                0x00010bb8       0x18 eeprom_driver.o
+                0x00010bb8                flush_buffer
+ .text.EEPROM_read_byte
+                0x00010bd0       0x4c eeprom_driver.o
+                0x00010bd0                EEPROM_read_byte
+ .text.EEPROM_write_byte
+                0x00010c1c       0x44 eeprom_driver.o
+                0x00010c1c                EEPROM_write_byte
+ .text.EEPROM_read_block
+                0x00010c60       0x6c eeprom_driver.o
+                0x00010c60                EEPROM_read_block
+ .text.EEPROM_write_block
+                0x00010ccc       0xae eeprom_driver.o
+                0x00010ccc                EEPROM_write_block
+ .text.EEPROM_erase_all
+                0x00010d7a       0x10 eeprom_driver.o
+                0x00010d7a                EEPROM_erase_all
+ .text.uart_init
+                0x00010d8a       0x1a uart.o
+                0x00010d8a                uart_init
+ .text.uart_deinit
+                0x00010da4       0x14 uart.o
+                0x00010da4                uart_deinit
+ .text.WDT_EnableAndSetTimeout
+                0x00010db8       0x14 watchdog.o
+                0x00010db8                WDT_EnableAndSetTimeout
+ .text.xboot_get_version
+                0x00010dcc        0xe api.o
+                0x00010dcc                xboot_get_version
+ .text.xboot_spm_wrapper
+                0x00010dda        0x4 api.o
+                0x00010dda                xboot_spm_wrapper
+ .text.xboot_app_temp_erase
+                0x00010dde       0x4c api.o
+                0x00010dde                xboot_app_temp_erase
+ .text.xboot_erase_application_page
+                0x00010e2a       0x2a api.o
+                0x00010e2a                xboot_erase_application_page
+ .text.xboot_write_user_signature_row
+                0x00010e54       0x26 api.o
+                0x00010e54                xboot_write_user_signature_row
+ .text.xboot_write_application_page
+                0x00010e7a       0x26 api.o
+                0x00010e7a                xboot_write_application_page
+ .text.xboot_app_temp_write_page
+                0x00010ea0        0xa api.o
+                0x00010ea0                xboot_app_temp_write_page
+                0x00010eaa                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00010eaa        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+                0x00010eaa                _exit
+                0x00010eaa                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00010eaa        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00010eae                _etext = .
+
+.data           0x00802000        0x0 load address 0x00010eae
+                0x00802000                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+ .data          0x00802000        0x0 xboot.o
+ .data          0x00802000        0x0 flash.o
+ .data          0x00802000        0x0 eeprom_driver.o
+ .data          0x00802000        0x0 uart.o
+ .data          0x00802000        0x0 i2c.o
+ .data          0x00802000        0x0 fifo.o
+ .data          0x00802000        0x0 watchdog.o
+ .data          0x00802000        0x0 api.o
+ .data          0x00802000        0x0 sp_driver.o
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00802000                . = ALIGN (0x2)
+                0x00802000                _edata = .
+                0x00802000                PROVIDE (__data_end, .)
+
+.bss            0x00802000      0x101
+                0x00802000                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00802000      0x101 xboot.o
+                0x00802000                comm_mode
+                0x00802001                buffer
+                0x00802101                PROVIDE (__bss_end, .)
+                0x00010eae                __data_load_start = LOADADDR (.data)
+                0x00010eae                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00802101        0x0
+                0x00802101                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00802101                PROVIDE (__noinit_end, .)
+                0x00802101                _end = .
+                0x00802101                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000     0x4008
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+ .stab          0x000006cc     0x1ea8 xboot.o
+                               0x1f2c (size before relaxing)
+ .stab          0x00002574      0x210 flash.o
+                               0x1194 (size before relaxing)
+ .stab          0x00002784      0x5c4 eeprom_driver.o
+                               0x15b4 (size before relaxing)
+ .stab          0x00002d48      0x204 uart.o
+                               0x1188 (size before relaxing)
+ .stab          0x00002f4c      0x168 i2c.o
+                               0x117c (size before relaxing)
+ .stab          0x000030b4      0x168 fifo.o
+                               0x1290 (size before relaxing)
+ .stab          0x0000321c      0x1b0 watchdog.o
+                               0x11a0 (size before relaxing)
+ .stab          0x000033cc      0x528 api.o
+                               0x14ac (size before relaxing)
+ .stab          0x000038f4      0x714 sp_driver.o
+                                0x720 (size before relaxing)
+
+.stabstr        0x00000000     0x9f75
+ *(.stabstr)
+ .stabstr       0x00000000     0x9f75 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f xboot.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 flash.o
+ .comment       0x00000000       0x30 eeprom_driver.o
+ .comment       0x00000000       0x30 uart.o
+ .comment       0x00000000       0x30 i2c.o
+ .comment       0x00000000       0x30 fifo.o
+ .comment       0x00000000       0x30 watchdog.o
+ .comment       0x00000000       0x30 api.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(xboot.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+BlockLoad                                         xboot.o
+BlockRead                                         xboot.o
+EEPROM_erase_all                                  eeprom_driver.o
+                                                  xboot.o
+EEPROM_erase_page                                 eeprom_driver.o
+EEPROM_read_block                                 eeprom_driver.o
+                                                  xboot.o
+EEPROM_read_byte                                  eeprom_driver.o
+                                                  xboot.o
+EEPROM_write_block                                eeprom_driver.o
+                                                  xboot.o
+EEPROM_write_byte                                 eeprom_driver.o
+                                                  xboot.o
+Flash_ProgramPage                                 flash.o
+                                                  api.o
+                                                  xboot.o
+SP_ApplicationCRC                                 sp_driver.o
+SP_BootCRC                                        sp_driver.o
+SP_EraseApplicationPage                           sp_driver.o
+                                                  api.o
+SP_EraseApplicationSection                        sp_driver.o
+                                                  xboot.o
+SP_EraseBootPage                                  sp_driver.o
+SP_EraseFlashBuffer                               sp_driver.o
+SP_EraseUserSignatureRow                          sp_driver.o
+                                                  api.o
+                                                  xboot.o
+SP_EraseWriteApplicationPage                      sp_driver.o
+                                                  flash.o
+SP_EraseWriteBootPage                             sp_driver.o
+SP_LoadFlashPage                                  sp_driver.o
+                                                  api.o
+                                                  flash.o
+                                                  xboot.o
+SP_LoadFlashWord                                  sp_driver.o
+                                                  xboot.o
+SP_LockSPM                                        sp_driver.o
+SP_ReadByte                                       sp_driver.o
+                                                  xboot.o
+SP_ReadCalibrationByte                            sp_driver.o
+                                                  xboot.o
+SP_ReadFlashPage                                  sp_driver.o
+                                                  xboot.o
+SP_ReadFuseByte                                   sp_driver.o
+                                                  xboot.o
+SP_ReadLockBits                                   sp_driver.o
+                                                  xboot.o
+SP_ReadUserSignatureByte                          sp_driver.o
+                                                  xboot.o
+SP_ReadWord                                       sp_driver.o
+                                                  xboot.o
+SP_WaitForSPM                                     sp_driver.o
+                                                  api.o
+                                                  flash.o
+                                                  xboot.o
+SP_WriteApplicationPage                           sp_driver.o
+                                                  flash.o
+                                                  xboot.o
+SP_WriteBootPage                                  sp_driver.o
+SP_WriteLockBits                                  sp_driver.o
+                                                  xboot.o
+SP_WriteUserSignatureRow                          sp_driver.o
+                                                  api.o
+                                                  xboot.o
+WDT_Disable                                       watchdog.o
+WDT_EnableAndSetTimeout                           watchdog.o
+                                                  xboot.o
+__bad_interrupt                                   c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__bss_end                                         c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+__do_clear_bss                                    c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_clear_bss.o)
+                                                  xboot.o
+__heap_end                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__init                                            c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__stack                                           c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_1                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_10                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_100                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_101                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_102                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_103                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_104                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_105                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_106                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_107                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_108                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_109                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_11                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_110                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_111                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_112                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_113                                      c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_12                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_13                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_14                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_15                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_16                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_17                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_18                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_19                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_2                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_20                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_21                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_22                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_23                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_24                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_25                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_26                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_27                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_28                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_29                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_3                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_30                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_31                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_32                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_33                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_34                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_35                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_36                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_37                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_38                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_39                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_4                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_40                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_41                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_42                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_43                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_44                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_45                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_46                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_47                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_48                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_49                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_5                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_50                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_51                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_52                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_53                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_54                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_55                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_56                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_57                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_58                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_59                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_6                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_60                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_61                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_62                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_63                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_64                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_65                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_66                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_67                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_68                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_69                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_7                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_70                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_71                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_72                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_73                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_74                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_75                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_76                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_77                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_78                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_79                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_8                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_80                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_81                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_82                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_83                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_84                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_85                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_86                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_87                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_88                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_89                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_9                                        c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_90                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_91                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_92                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_93                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_94                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_95                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_96                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_97                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_98                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_99                                       c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vector_default                                  c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+__vectors                                         c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+_exit                                             c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+api_jump_table                                    api.o
+buffer                                            xboot.o
+clear_buffer                                      xboot.o
+comm_mode                                         xboot.o
+crc16_block                                       xboot.o
+exit                                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+                                                  c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+fifo_cur_char                                     fifo.o
+fifo_deinit                                       fifo.o
+fifo_init                                         fifo.o
+fifo_send_char                                    fifo.o
+fifo_send_char_blocking                           fifo.o
+flush_buffer                                      eeprom_driver.o
+get_2bytes                                        xboot.o
+get_char                                          xboot.o
+i2c_deinit                                        i2c.o
+i2c_init                                          i2c.o
+install_firmware                                  xboot.o
+main                                              xboot.o
+                                                  c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
+send_char                                         xboot.o
+uart_deinit                                       uart.o
+                                                  xboot.o
+uart_init                                         uart.o
+                                                  xboot.o
+wait_for_nvm                                      eeprom_driver.o
+xboot_app_temp_erase                              api.o
+                                                  xboot.o
+xboot_app_temp_write_page                         api.o
+xboot_erase_application_page                      api.o
+xboot_get_version                                 api.o
+xboot_spm_wrapper                                 api.o
+xboot_write_application_page                      api.o
+xboot_write_user_signature_row                    api.o

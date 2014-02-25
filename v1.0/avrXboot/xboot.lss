@@ -1,0 +1,3000 @@
+
+xboot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000eae  00010000  00010000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00802000  00010eae  00000f42  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000101  00802000  00802000  00000f42  2**0
+                  ALLOC
+  3 .stab         00004008  00000000  00000000  00000f44  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00009f75  00000000  00000000  00004f4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  0000eec1  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text:
+
+00010000 <__vectors>:
+   10000:	0c 94 ed 80 	jmp	0x101da	; 0x101da <__ctors_end>
+   10004:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10008:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1000c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10010:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10014:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10018:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1001c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10020:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10024:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10028:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1002c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10030:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10034:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10038:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1003c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10040:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10044:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10048:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1004c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10050:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10054:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10058:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1005c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10060:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10064:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10068:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1006c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10070:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10074:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10078:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1007c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10080:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10084:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10088:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1008c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10090:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10094:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10098:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1009c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100a0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100a4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100a8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100ac:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100b0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100b4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100b8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100bc:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100c0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100c4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100c8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100cc:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100d0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100d4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100d8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100dc:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100e0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100e4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100e8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100ec:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100f0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100f4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100f8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   100fc:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10100:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10104:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10108:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1010c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10110:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10114:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10118:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1011c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10120:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10124:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10128:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1012c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10130:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10134:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10138:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1013c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10140:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10144:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10148:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1014c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10150:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10154:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10158:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1015c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10160:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10164:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10168:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1016c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10170:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10174:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10178:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1017c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10180:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10184:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10188:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1018c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10190:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10194:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   10198:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   1019c:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101a0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101a4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101a8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101ac:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101b0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101b4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101b8:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101bc:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101c0:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+   101c4:	0c 94 ff 80 	jmp	0x101fe	; 0x101fe <__bad_interrupt>
+
+000101c8 <api_jump_table>:
+   101c8:	58 42 6a 01 e6 86 ed 86 15 87 3d 87 2a 87 ef 86     XBj.......=.*...
+   101d8:	50 87                                               P.
+
+000101da <__ctors_end>:
+   101da:	11 24       	eor	r1, r1
+   101dc:	1f be       	out	0x3f, r1	; 63
+   101de:	cf ef       	ldi	r28, 0xFF	; 255
+   101e0:	df e2       	ldi	r29, 0x2F	; 47
+   101e2:	de bf       	out	0x3e, r29	; 62
+   101e4:	cd bf       	out	0x3d, r28	; 61
+
+000101e6 <__do_clear_bss>:
+   101e6:	21 e2       	ldi	r18, 0x21	; 33
+   101e8:	a0 e0       	ldi	r26, 0x00	; 0
+   101ea:	b0 e2       	ldi	r27, 0x20	; 32
+   101ec:	01 c0       	rjmp	.+2      	; 0x101f0 <.do_clear_bss_start>
+
+000101ee <.do_clear_bss_loop>:
+   101ee:	1d 92       	st	X+, r1
+
+000101f0 <.do_clear_bss_start>:
+   101f0:	a1 30       	cpi	r26, 0x01	; 1
+   101f2:	b2 07       	cpc	r27, r18
+   101f4:	e1 f7       	brne	.-8      	; 0x101ee <.do_clear_bss_loop>
+   101f6:	0e 94 ce 83 	call	0x1079c	; 0x1079c <main>
+   101fa:	0c 94 55 87 	jmp	0x10eaa	; 0x10eaa <_exit>
+
+000101fe <__bad_interrupt>:
+   101fe:	0c 94 00 80 	jmp	0x10000	; 0x10000 <__vectors>
+
+00010202 <SP_ReadByte>:
+   10202:	3b b7       	in	r19, 0x3b	; 59
+   10204:	8b bf       	out	0x3b, r24	; 59
+   10206:	fb 01       	movw	r30, r22
+   10208:	86 91       	elpm	r24, Z
+   1020a:	3b bf       	out	0x3b, r19	; 59
+   1020c:	08 95       	ret
+
+0001020e <SP_ReadWord>:
+   1020e:	3b b7       	in	r19, 0x3b	; 59
+   10210:	8b bf       	out	0x3b, r24	; 59
+   10212:	fb 01       	movw	r30, r22
+   10214:	87 91       	elpm	r24, Z+
+   10216:	96 91       	elpm	r25, Z
+   10218:	3b bf       	out	0x3b, r19	; 59
+   1021a:	08 95       	ret
+
+0001021c <SP_ReadCalibrationByte>:
+   1021c:	42 e0       	ldi	r20, 0x02	; 2
+   1021e:	97 c0       	rjmp	.+302    	; 0x1034e <SP_CommonLPM>
+
+00010220 <SP_ReadUserSignatureByte>:
+   10220:	41 e0       	ldi	r20, 0x01	; 1
+   10222:	95 c0       	rjmp	.+298    	; 0x1034e <SP_CommonLPM>
+
+00010224 <SP_ReadFuseByte>:
+   10224:	80 93 c0 01 	sts	0x01C0, r24
+   10228:	88 27       	eor	r24, r24
+   1022a:	80 93 c1 01 	sts	0x01C1, r24
+   1022e:	80 93 c2 01 	sts	0x01C2, r24
+   10232:	47 e0       	ldi	r20, 0x07	; 7
+   10234:	7c d0       	rcall	.+248    	; 0x1032e <SP_CommonCMD>
+   10236:	cb 01       	movw	r24, r22
+   10238:	08 95       	ret
+
+0001023a <SP_WriteLockBits>:
+   1023a:	80 93 c4 01 	sts	0x01C4, r24
+   1023e:	48 e0       	ldi	r20, 0x08	; 8
+   10240:	76 c0       	rjmp	.+236    	; 0x1032e <SP_CommonCMD>
+
+00010242 <SP_ReadLockBits>:
+   10242:	80 91 d0 01 	lds	r24, 0x01D0
+   10246:	08 95       	ret
+
+00010248 <SP_EraseUserSignatureRow>:
+   10248:	3b b7       	in	r19, 0x3b	; 59
+   1024a:	48 e1       	ldi	r20, 0x18	; 24
+   1024c:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+00010250 <SP_WriteUserSignatureRow>:
+   10250:	3b b7       	in	r19, 0x3b	; 59
+   10252:	4a e1       	ldi	r20, 0x1A	; 26
+   10254:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+00010258 <SP_EraseApplicationSection>:
+   10258:	3b b7       	in	r19, 0x3b	; 59
+   1025a:	88 27       	eor	r24, r24
+   1025c:	99 27       	eor	r25, r25
+   1025e:	8b bf       	out	0x3b, r24	; 59
+   10260:	40 e2       	ldi	r20, 0x20	; 32
+   10262:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+00010266 <SP_EraseApplicationPage>:
+   10266:	3b b7       	in	r19, 0x3b	; 59
+   10268:	8b bf       	out	0x3b, r24	; 59
+   1026a:	cb 01       	movw	r24, r22
+   1026c:	42 e2       	ldi	r20, 0x22	; 34
+   1026e:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+00010272 <SP_LoadFlashWord>:
+   10272:	3b b7       	in	r19, 0x3b	; 59
+   10274:	0b 01       	movw	r0, r22
+   10276:	43 e2       	ldi	r20, 0x23	; 35
+   10278:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+0001027c <SP_LoadFlashPage>:
+   1027c:	ee 27       	eor	r30, r30
+   1027e:	ff 27       	eor	r31, r31
+   10280:	19 be       	out	0x39, r1	; 57
+   10282:	dc 01       	movw	r26, r24
+   10284:	43 e2       	ldi	r20, 0x23	; 35
+   10286:	40 93 ca 01 	sts	0x01CA, r20
+   1028a:	50 e8       	ldi	r21, 0x80	; 128
+   1028c:	2d e9       	ldi	r18, 0x9D	; 157
+
+0001028e <SP_LoadFlashPage_1>:
+   1028e:	0d 90       	ld	r0, X+
+   10290:	1d 90       	ld	r1, X+
+   10292:	20 93 34 00 	sts	0x0034, r18
+   10296:	e8 95       	spm
+   10298:	32 96       	adiw	r30, 0x02	; 2
+   1029a:	5a 95       	dec	r21
+   1029c:	c1 f7       	brne	.-16     	; 0x1028e <SP_LoadFlashPage_1>
+   1029e:	11 24       	eor	r1, r1
+   102a0:	08 95       	ret
+
+000102a2 <SP_ReadFlashPage>:
+   102a2:	3b b7       	in	r19, 0x3b	; 59
+   102a4:	6b bf       	out	0x3b, r22	; 59
+   102a6:	fa 01       	movw	r30, r20
+   102a8:	19 be       	out	0x39, r1	; 57
+   102aa:	dc 01       	movw	r26, r24
+   102ac:	40 e0       	ldi	r20, 0x00	; 0
+   102ae:	40 93 ca 01 	sts	0x01CA, r20
+   102b2:	50 e0       	ldi	r21, 0x00	; 0
+
+000102b4 <SP_ReadFlashPage_1>:
+   102b4:	87 91       	elpm	r24, Z+
+   102b6:	97 91       	elpm	r25, Z+
+   102b8:	8d 93       	st	X+, r24
+   102ba:	9d 93       	st	X+, r25
+   102bc:	5a 95       	dec	r21
+   102be:	d1 f7       	brne	.-12     	; 0x102b4 <SP_ReadFlashPage_1>
+   102c0:	3b bf       	out	0x3b, r19	; 59
+   102c2:	08 95       	ret
+
+000102c4 <SP_WriteApplicationPage>:
+   102c4:	3b b7       	in	r19, 0x3b	; 59
+   102c6:	8b bf       	out	0x3b, r24	; 59
+   102c8:	cb 01       	movw	r24, r22
+   102ca:	44 e2       	ldi	r20, 0x24	; 36
+   102cc:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+000102d0 <SP_EraseWriteApplicationPage>:
+   102d0:	3b b7       	in	r19, 0x3b	; 59
+   102d2:	8b bf       	out	0x3b, r24	; 59
+   102d4:	cb 01       	movw	r24, r22
+   102d6:	45 e2       	ldi	r20, 0x25	; 37
+   102d8:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+000102dc <SP_EraseFlashBuffer>:
+   102dc:	3b b7       	in	r19, 0x3b	; 59
+   102de:	46 e2       	ldi	r20, 0x26	; 38
+   102e0:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+000102e4 <SP_EraseBootPage>:
+   102e4:	3b b7       	in	r19, 0x3b	; 59
+   102e6:	8b bf       	out	0x3b, r24	; 59
+   102e8:	cb 01       	movw	r24, r22
+   102ea:	4a e2       	ldi	r20, 0x2A	; 42
+   102ec:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+000102f0 <SP_WriteBootPage>:
+   102f0:	3b b7       	in	r19, 0x3b	; 59
+   102f2:	8b bf       	out	0x3b, r24	; 59
+   102f4:	cb 01       	movw	r24, r22
+   102f6:	4c e2       	ldi	r20, 0x2C	; 44
+   102f8:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+000102fc <SP_EraseWriteBootPage>:
+   102fc:	3b b7       	in	r19, 0x3b	; 59
+   102fe:	8b bf       	out	0x3b, r24	; 59
+   10300:	cb 01       	movw	r24, r22
+   10302:	4d e2       	ldi	r20, 0x2D	; 45
+   10304:	0c 94 ac 81 	jmp	0x10358	; 0x10358 <SP_CommonSPM>
+
+00010308 <SP_ApplicationCRC>:
+   10308:	48 e3       	ldi	r20, 0x38	; 56
+   1030a:	11 c0       	rjmp	.+34     	; 0x1032e <SP_CommonCMD>
+
+0001030c <SP_BootCRC>:
+   1030c:	49 e3       	ldi	r20, 0x39	; 57
+   1030e:	0f c0       	rjmp	.+30     	; 0x1032e <SP_CommonCMD>
+
+00010310 <SP_LockSPM>:
+   10310:	28 ed       	ldi	r18, 0xD8	; 216
+   10312:	20 93 34 00 	sts	0x0034, r18
+   10316:	21 e0       	ldi	r18, 0x01	; 1
+   10318:	20 93 cc 01 	sts	0x01CC, r18
+   1031c:	08 95       	ret
+
+0001031e <SP_WaitForSPM>:
+   1031e:	20 91 cf 01 	lds	r18, 0x01CF
+   10322:	27 fd       	sbrc	r18, 7
+   10324:	fc cf       	rjmp	.-8      	; 0x1031e <SP_WaitForSPM>
+   10326:	22 27       	eor	r18, r18
+   10328:	20 93 ca 01 	sts	0x01CA, r18
+   1032c:	08 95       	ret
+
+0001032e <SP_CommonCMD>:
+   1032e:	40 93 ca 01 	sts	0x01CA, r20
+   10332:	28 ed       	ldi	r18, 0xD8	; 216
+   10334:	31 e0       	ldi	r19, 0x01	; 1
+   10336:	20 93 34 00 	sts	0x0034, r18
+   1033a:	30 93 cb 01 	sts	0x01CB, r19
+   1033e:	60 91 c4 01 	lds	r22, 0x01C4
+   10342:	70 91 c5 01 	lds	r23, 0x01C5
+   10346:	80 91 c6 01 	lds	r24, 0x01C6
+   1034a:	99 27       	eor	r25, r25
+   1034c:	08 95       	ret
+
+0001034e <SP_CommonLPM>:
+   1034e:	fc 01       	movw	r30, r24
+   10350:	40 93 ca 01 	sts	0x01CA, r20
+   10354:	84 91       	lpm	r24, Z
+   10356:	08 95       	ret
+
+00010358 <SP_CommonSPM>:
+   10358:	fc 01       	movw	r30, r24
+   1035a:	40 93 ca 01 	sts	0x01CA, r20
+   1035e:	2d e9       	ldi	r18, 0x9D	; 157
+   10360:	20 93 34 00 	sts	0x0034, r18
+   10364:	e8 95       	spm
+   10366:	11 24       	eor	r1, r1
+   10368:	3b bf       	out	0x3b, r19	; 59
+   1036a:	08 95       	ret
+
+0001036c <_crc16_update>:
+_crc16_update(uint16_t __crc, uint8_t __data)
+{
+	uint8_t __tmp;
+	uint16_t __ret;
+
+	__asm__ __volatile__ (
+   1036c:	9c 01       	movw	r18, r24
+   1036e:	26 27       	eor	r18, r22
+   10370:	62 2f       	mov	r22, r18
+   10372:	62 95       	swap	r22
+   10374:	62 27       	eor	r22, r18
+   10376:	06 2e       	mov	r0, r22
+   10378:	66 95       	lsr	r22
+   1037a:	66 95       	lsr	r22
+   1037c:	60 25       	eor	r22, r0
+   1037e:	06 2e       	mov	r0, r22
+   10380:	66 95       	lsr	r22
+   10382:	60 25       	eor	r22, r0
+   10384:	67 70       	andi	r22, 0x07	; 7
+   10386:	02 2e       	mov	r0, r18
+   10388:	23 2f       	mov	r18, r19
+   1038a:	66 95       	lsr	r22
+   1038c:	07 94       	ror	r0
+   1038e:	67 95       	ror	r22
+   10390:	30 2d       	mov	r19, r0
+   10392:	26 27       	eor	r18, r22
+   10394:	06 94       	lsr	r0
+   10396:	67 95       	ror	r22
+   10398:	30 25       	eor	r19, r0
+   1039a:	26 27       	eor	r18, r22
+		: "=r" (__ret), "=d" (__tmp)
+		: "r" (__data), "0" (__crc)
+		: "r0"
+	);
+	return __ret;
+}
+   1039c:	c9 01       	movw	r24, r18
+   1039e:	08 95       	ret
+
+000103a0 <get_char>:
+	
+	while (1)
+	{
+		#ifdef USE_UART
+		// Get next character
+		if (comm_mode == MODE_UNDEF || comm_mode == MODE_UART)
+   103a0:	90 91 00 20 	lds	r25, 0x2000
+   103a4:	92 30       	cpi	r25, 0x02	; 2
+   103a6:	50 f4       	brcc	.+20     	; 0x103bc <get_char+0x1c>
+		{
+			if (uart_char_received())
+   103a8:	80 91 a1 08 	lds	r24, 0x08A1
+   103ac:	87 ff       	sbrs	r24, 7
+   103ae:	fa cf       	rjmp	.-12     	; 0x103a4 <get_char+0x4>
+			{
+				comm_mode = MODE_UART;
+   103b0:	81 e0       	ldi	r24, 0x01	; 1
+   103b2:	80 93 00 20 	sts	0x2000, r24
+				return uart_cur_char();
+   103b6:	80 91 a0 08 	lds	r24, 0x08A0
+   103ba:	08 95       	ret
+   103bc:	ff cf       	rjmp	.-2      	; 0x103bc <get_char+0x1c>
+
+000103be <send_char>:
+	unsigned char tmp;
+	#endif
+	
+	#ifdef USE_UART
+	// Send character
+	if (comm_mode == MODE_UNDEF || comm_mode == MODE_UART)
+   103be:	90 91 00 20 	lds	r25, 0x2000
+   103c2:	92 30       	cpi	r25, 0x02	; 2
+   103c4:	58 f4       	brcc	.+22     	; 0x103dc <send_char+0x1e>
+		#else // UART_PIN_INV
+		UART_EN_PORT |= (1 << UART_EN_PIN);
+		#endif // UART_PIN_INV
+		#endif // USE_UART_EN_PIN
+		#endif // __AVR_XMEGA__
+		uart_send_char_blocking(c);
+   103c6:	80 93 a0 08 	sts	0x08A0, r24
+   103ca:	80 91 a1 08 	lds	r24, 0x08A1
+   103ce:	86 ff       	sbrs	r24, 6
+   103d0:	fc cf       	rjmp	.-8      	; 0x103ca <send_char+0xc>
+   103d2:	80 91 a1 08 	lds	r24, 0x08A1
+   103d6:	80 64       	ori	r24, 0x40	; 64
+   103d8:	80 93 a1 08 	sts	0x08A1, r24
+   103dc:	08 95       	ret
+
+000103de <get_2bytes>:
+
+unsigned int __attribute__ ((noinline)) get_2bytes()
+{
+	// return (get_char() << 8) | get_char();
+	unsigned int result;
+	asm volatile (
+   103de:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   103e2:	38 2f       	mov	r19, r24
+   103e4:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   103e8:	28 2f       	mov	r18, r24
+	"mov  %A0,r24"     "\n\t"
+	: "=r" (result)
+	:
+	);
+	return result;
+}
+   103ea:	c9 01       	movw	r24, r18
+   103ec:	08 95       	ret
+
+000103ee <BlockLoad>:
+		*(ptr++) = 0xff;
+	}
+}
+
+unsigned char BlockLoad(unsigned int size, unsigned char mem, ADDR_T *address)
+{
+   103ee:	af 92       	push	r10
+   103f0:	bf 92       	push	r11
+   103f2:	cf 92       	push	r12
+   103f4:	df 92       	push	r13
+   103f6:	ef 92       	push	r14
+   103f8:	ff 92       	push	r15
+   103fa:	0f 93       	push	r16
+   103fc:	1f 93       	push	r17
+   103fe:	cf 93       	push	r28
+   10400:	df 93       	push	r29
+   10402:	1f 92       	push	r1
+   10404:	cd b7       	in	r28, 0x3d	; 61
+   10406:	de b7       	in	r29, 0x3e	; 62
+   10408:	7c 01       	movw	r14, r24
+   1040a:	26 2f       	mov	r18, r22
+   1040c:	5a 01       	movw	r10, r20
+	ADDR_T tempaddress;
+	
+	#ifdef USE_WATCHDOG
+	WDT_Reset();
+   1040e:	a8 95       	wdr
+   10410:	41 e0       	ldi	r20, 0x01	; 1
+   10412:	c4 2e       	mov	r12, r20
+   10414:	40 e2       	ldi	r20, 0x20	; 32
+   10416:	d4 2e       	mov	r13, r20
+	#endif // USE_WATCHDOG
+	
+	// fill up buffer
+	for (int i = 0; i < SPM_PAGESIZE; i++)
+   10418:	00 e0       	ldi	r16, 0x00	; 0
+   1041a:	10 e0       	ldi	r17, 0x00	; 0
+	{
+		char c = 0xff;
+		
+		if (i < size)
+   1041c:	0e 15       	cp	r16, r14
+   1041e:	1f 05       	cpc	r17, r15
+   10420:	28 f4       	brcc	.+10     	; 0x1042c <BlockLoad+0x3e>
+		c = get_char();
+   10422:	29 83       	std	Y+1, r18	; 0x01
+   10424:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10428:	29 81       	ldd	r18, Y+1	; 0x01
+   1042a:	01 c0       	rjmp	.+2      	; 0x1042e <BlockLoad+0x40>
+	#endif // USE_WATCHDOG
+	
+	// fill up buffer
+	for (int i = 0; i < SPM_PAGESIZE; i++)
+	{
+		char c = 0xff;
+   1042c:	8f ef       	ldi	r24, 0xFF	; 255
+		
+		if (i < size)
+		c = get_char();
+		
+		buffer[i] = c;
+   1042e:	f6 01       	movw	r30, r12
+   10430:	81 93       	st	Z+, r24
+   10432:	6f 01       	movw	r12, r30
+	#ifdef USE_WATCHDOG
+	WDT_Reset();
+	#endif // USE_WATCHDOG
+	
+	// fill up buffer
+	for (int i = 0; i < SPM_PAGESIZE; i++)
+   10434:	0f 5f       	subi	r16, 0xFF	; 255
+   10436:	1f 4f       	sbci	r17, 0xFF	; 255
+   10438:	01 15       	cp	r16, r1
+   1043a:	f1 e0       	ldi	r31, 0x01	; 1
+   1043c:	1f 07       	cpc	r17, r31
+   1043e:	71 f7       	brne	.-36     	; 0x1041c <BlockLoad+0x2e>
+		
+		buffer[i] = c;
+	}
+	
+	// EEPROM memory type.
+	if(mem == MEM_EEPROM)
+   10440:	25 34       	cpi	r18, 0x45	; 69
+   10442:	b1 f4       	brne	.+44     	; 0x10470 <BlockLoad+0x82>
+	{
+		EEPROM_write_block(*address, buffer, size);
+   10444:	a7 01       	movw	r20, r14
+   10446:	61 e0       	ldi	r22, 0x01	; 1
+   10448:	70 e2       	ldi	r23, 0x20	; 32
+   1044a:	f5 01       	movw	r30, r10
+   1044c:	80 81       	ld	r24, Z
+   1044e:	91 81       	ldd	r25, Z+1	; 0x01
+   10450:	0e 94 66 86 	call	0x10ccc	; 0x10ccc <EEPROM_write_block>
+		(*address) += size;
+   10454:	f5 01       	movw	r30, r10
+   10456:	00 81       	ld	r16, Z
+   10458:	11 81       	ldd	r17, Z+1	; 0x01
+   1045a:	22 81       	ldd	r18, Z+2	; 0x02
+   1045c:	33 81       	ldd	r19, Z+3	; 0x03
+   1045e:	0e 0d       	add	r16, r14
+   10460:	1f 1d       	adc	r17, r15
+   10462:	21 1d       	adc	r18, r1
+   10464:	31 1d       	adc	r19, r1
+   10466:	00 83       	st	Z, r16
+   10468:	11 83       	std	Z+1, r17	; 0x01
+   1046a:	22 83       	std	Z+2, r18	; 0x02
+   1046c:	33 83       	std	Z+3, r19	; 0x03
+   1046e:	34 c0       	rjmp	.+104    	; 0x104d8 <BlockLoad+0xea>
+		return REPLY_ACK; // Report programming OK
+	}
+	
+	// Flash memory type
+	#ifdef __AVR_XMEGA__
+	else if (mem == MEM_FLASH || mem == MEM_USERSIG)
+   10470:	26 34       	cpi	r18, 0x46	; 70
+   10472:	11 f0       	breq	.+4      	; 0x10478 <BlockLoad+0x8a>
+   10474:	25 35       	cpi	r18, 0x55	; 85
+   10476:	71 f5       	brne	.+92     	; 0x104d4 <BlockLoad+0xe6>
+	#else // __AVR_XMEGA__
+	else if (mem == MEM_FLASH)
+	#endif // __AVR_XMEGA__
+	{
+		// NOTE: For flash programming, 'address' is given in words.
+		tempaddress = (*address) << 1;  // Store address in page.
+   10478:	f5 01       	movw	r30, r10
+   1047a:	80 81       	ld	r24, Z
+   1047c:	91 81       	ldd	r25, Z+1	; 0x01
+   1047e:	a2 81       	ldd	r26, Z+2	; 0x02
+   10480:	b3 81       	ldd	r27, Z+3	; 0x03
+		
+		(*address) += size >> 1;
+   10482:	f6 94       	lsr	r15
+   10484:	e7 94       	ror	r14
+   10486:	ac 01       	movw	r20, r24
+   10488:	bd 01       	movw	r22, r26
+   1048a:	4e 0d       	add	r20, r14
+   1048c:	5f 1d       	adc	r21, r15
+   1048e:	61 1d       	adc	r22, r1
+   10490:	71 1d       	adc	r23, r1
+   10492:	40 83       	st	Z, r20
+   10494:	51 83       	std	Z+1, r21	; 0x01
+   10496:	62 83       	std	Z+2, r22	; 0x02
+   10498:	73 83       	std	Z+3, r23	; 0x03
+		
+		#ifdef __AVR_XMEGA__
+		
+		if (mem == MEM_FLASH)
+   1049a:	26 34       	cpi	r18, 0x46	; 70
+   1049c:	61 f4       	brne	.+24     	; 0x104b6 <BlockLoad+0xc8>
+	#else // __AVR_XMEGA__
+	else if (mem == MEM_FLASH)
+	#endif // __AVR_XMEGA__
+	{
+		// NOTE: For flash programming, 'address' is given in words.
+		tempaddress = (*address) << 1;  // Store address in page.
+   1049e:	bc 01       	movw	r22, r24
+   104a0:	cd 01       	movw	r24, r26
+   104a2:	66 0f       	add	r22, r22
+   104a4:	77 1f       	adc	r23, r23
+   104a6:	88 1f       	adc	r24, r24
+   104a8:	99 1f       	adc	r25, r25
+		#ifdef __AVR_XMEGA__
+		
+		if (mem == MEM_FLASH)
+		{
+			#ifdef ENABLE_FLASH_ERASE_WRITE
+			Flash_ProgramPage(tempaddress, buffer, 1);
+   104aa:	21 e0       	ldi	r18, 0x01	; 1
+   104ac:	41 e0       	ldi	r20, 0x01	; 1
+   104ae:	50 e2       	ldi	r21, 0x20	; 32
+   104b0:	0e 94 ac 85 	call	0x10b58	; 0x10b58 <Flash_ProgramPage>
+   104b4:	11 c0       	rjmp	.+34     	; 0x104d8 <BlockLoad+0xea>
+			#else
+			Flash_ProgramPage(tempaddress, buffer, 0);
+			#endif
+		}
+		else if (mem == MEM_USERSIG)
+   104b6:	25 35       	cpi	r18, 0x55	; 85
+   104b8:	79 f4       	brne	.+30     	; 0x104d8 <BlockLoad+0xea>
+		{
+			Flash_LoadFlashPage(buffer);
+   104ba:	81 e0       	ldi	r24, 0x01	; 1
+   104bc:	90 e2       	ldi	r25, 0x20	; 32
+   104be:	0e 94 3e 81 	call	0x1027c	; 0x1027c <SP_LoadFlashPage>
+			Flash_EraseUserSignatureRow();
+   104c2:	0e 94 24 81 	call	0x10248	; 0x10248 <SP_EraseUserSignatureRow>
+			Flash_WaitForSPM();
+   104c6:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+			Flash_WriteUserSignatureRow();
+   104ca:	0e 94 28 81 	call	0x10250	; 0x10250 <SP_WriteUserSignatureRow>
+			Flash_WaitForSPM();
+   104ce:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+   104d2:	02 c0       	rjmp	.+4      	; 0x104d8 <BlockLoad+0xea>
+	}
+	
+	// Invalid memory type?
+	else
+	{
+		return REPLY_ERROR;
+   104d4:	8f e3       	ldi	r24, 0x3F	; 63
+   104d6:	01 c0       	rjmp	.+2      	; 0x104da <BlockLoad+0xec>
+		#else
+		Flash_ProgramPage(tempaddress, buffer, 0);
+		#endif
+		#endif // __AVR_XMEGA__
+		
+		return REPLY_ACK; // Report programming OK
+   104d8:	8d e0       	ldi	r24, 0x0D	; 13
+	// Invalid memory type?
+	else
+	{
+		return REPLY_ERROR;
+	}
+}
+   104da:	0f 90       	pop	r0
+   104dc:	df 91       	pop	r29
+   104de:	cf 91       	pop	r28
+   104e0:	1f 91       	pop	r17
+   104e2:	0f 91       	pop	r16
+   104e4:	ff 90       	pop	r15
+   104e6:	ef 90       	pop	r14
+   104e8:	df 90       	pop	r13
+   104ea:	cf 90       	pop	r12
+   104ec:	bf 90       	pop	r11
+   104ee:	af 90       	pop	r10
+   104f0:	08 95       	ret
+
+000104f2 <BlockRead>:
+
+
+
+void BlockRead(unsigned int size, unsigned char mem, ADDR_T *address)
+{
+   104f2:	9f 92       	push	r9
+   104f4:	af 92       	push	r10
+   104f6:	bf 92       	push	r11
+   104f8:	cf 92       	push	r12
+   104fa:	df 92       	push	r13
+   104fc:	ef 92       	push	r14
+   104fe:	ff 92       	push	r15
+   10500:	0f 93       	push	r16
+   10502:	1f 93       	push	r17
+   10504:	cf 93       	push	r28
+   10506:	df 93       	push	r29
+   10508:	7c 01       	movw	r14, r24
+   1050a:	96 2e       	mov	r9, r22
+   1050c:	ea 01       	movw	r28, r20
+	int offset = 0;
+	int size2 = size;
+	
+	// EEPROM memory type.
+	
+	if (mem == MEM_EEPROM) // Read EEPROM
+   1050e:	85 e4       	ldi	r24, 0x45	; 69
+   10510:	68 13       	cpse	r22, r24
+   10512:	16 c0       	rjmp	.+44     	; 0x10540 <BlockRead+0x4e>
+	{
+		EEPROM_read_block(*address, buffer, size);
+   10514:	a7 01       	movw	r20, r14
+   10516:	61 e0       	ldi	r22, 0x01	; 1
+   10518:	70 e2       	ldi	r23, 0x20	; 32
+   1051a:	88 81       	ld	r24, Y
+   1051c:	99 81       	ldd	r25, Y+1	; 0x01
+   1051e:	0e 94 30 86 	call	0x10c60	; 0x10c60 <EEPROM_read_block>
+		(*address) += size;
+   10522:	88 81       	ld	r24, Y
+   10524:	99 81       	ldd	r25, Y+1	; 0x01
+   10526:	aa 81       	ldd	r26, Y+2	; 0x02
+   10528:	bb 81       	ldd	r27, Y+3	; 0x03
+   1052a:	8e 0d       	add	r24, r14
+   1052c:	9f 1d       	adc	r25, r15
+   1052e:	a1 1d       	adc	r26, r1
+   10530:	b1 1d       	adc	r27, r1
+   10532:	88 83       	st	Y, r24
+   10534:	99 83       	std	Y+1, r25	; 0x01
+   10536:	aa 83       	std	Y+2, r26	; 0x02
+   10538:	bb 83       	std	Y+3, r27	; 0x03
+   1053a:	c1 e0       	ldi	r28, 0x01	; 1
+   1053c:	d0 e2       	ldi	r29, 0x20	; 32
+   1053e:	55 c0       	rjmp	.+170    	; 0x105ea <BlockRead+0xf8>
+	}
+	
+	// Flash memory type.
+	#ifdef __AVR_XMEGA__
+	else if (mem == MEM_FLASH || mem == MEM_USERSIG || mem == MEM_PRODSIG)
+   10540:	86 e4       	ldi	r24, 0x46	; 70
+   10542:	68 17       	cp	r22, r24
+   10544:	31 f0       	breq	.+12     	; 0x10552 <BlockRead+0x60>
+   10546:	85 e5       	ldi	r24, 0x55	; 85
+   10548:	68 17       	cp	r22, r24
+   1054a:	19 f0       	breq	.+6      	; 0x10552 <BlockRead+0x60>
+   1054c:	80 e5       	ldi	r24, 0x50	; 80
+   1054e:	68 13       	cpse	r22, r24
+   10550:	52 c0       	rjmp	.+164    	; 0x105f6 <BlockRead+0x104>
+	#else // __AVR_XMEGA__
+	else if (mem == MEM_FLASH)
+	#endif // __AVR_XMEGA__
+	{
+		(*address) <<= 1; // Convert address to bytes temporarily.
+   10552:	88 81       	ld	r24, Y
+   10554:	99 81       	ldd	r25, Y+1	; 0x01
+   10556:	aa 81       	ldd	r26, Y+2	; 0x02
+   10558:	bb 81       	ldd	r27, Y+3	; 0x03
+   1055a:	88 0f       	add	r24, r24
+   1055c:	99 1f       	adc	r25, r25
+   1055e:	aa 1f       	adc	r26, r26
+   10560:	bb 1f       	adc	r27, r27
+   10562:	88 83       	st	Y, r24
+   10564:	99 83       	std	Y+1, r25	; 0x01
+   10566:	aa 83       	std	Y+2, r26	; 0x02
+   10568:	bb 83       	std	Y+3, r27	; 0x03
+   1056a:	67 01       	movw	r12, r14
+
+
+
+void BlockRead(unsigned int size, unsigned char mem, ADDR_T *address)
+{
+	int offset = 0;
+   1056c:	a1 2c       	mov	r10, r1
+   1056e:	b1 2c       	mov	r11, r1
+		(*address) <<= 1; // Convert address to bytes temporarily.
+		
+		do
+		{
+			#ifdef __AVR_XMEGA__
+			if (mem == MEM_FLASH)
+   10570:	86 e4       	ldi	r24, 0x46	; 70
+   10572:	98 12       	cpse	r9, r24
+   10574:	07 c0       	rjmp	.+14     	; 0x10584 <BlockRead+0x92>
+			{
+				buffer[offset++] = Flash_ReadByte(*address);
+   10576:	68 81       	ld	r22, Y
+   10578:	79 81       	ldd	r23, Y+1	; 0x01
+   1057a:	8a 81       	ldd	r24, Y+2	; 0x02
+   1057c:	9b 81       	ldd	r25, Y+3	; 0x03
+   1057e:	0e 94 01 81 	call	0x10202	; 0x10202 <SP_ReadByte>
+   10582:	0e c0       	rjmp	.+28     	; 0x105a0 <BlockRead+0xae>
+			}
+			else if (mem == MEM_USERSIG)
+   10584:	85 e5       	ldi	r24, 0x55	; 85
+   10586:	98 12       	cpse	r9, r24
+   10588:	05 c0       	rjmp	.+10     	; 0x10594 <BlockRead+0xa2>
+			{
+				buffer[offset++] = SP_ReadUserSignatureByte(*address);
+   1058a:	88 81       	ld	r24, Y
+   1058c:	99 81       	ldd	r25, Y+1	; 0x01
+   1058e:	0e 94 10 81 	call	0x10220	; 0x10220 <SP_ReadUserSignatureByte>
+   10592:	06 c0       	rjmp	.+12     	; 0x105a0 <BlockRead+0xae>
+			}
+			else if (mem == MEM_PRODSIG)
+   10594:	80 e5       	ldi	r24, 0x50	; 80
+   10596:	98 12       	cpse	r9, r24
+   10598:	0a c0       	rjmp	.+20     	; 0x105ae <BlockRead+0xbc>
+			{
+				buffer[offset++] = SP_ReadCalibrationByte(*address);
+   1059a:	88 81       	ld	r24, Y
+   1059c:	0e 94 0e 81 	call	0x1021c	; 0x1021c <SP_ReadCalibrationByte>
+   105a0:	f5 01       	movw	r30, r10
+   105a2:	ef 5f       	subi	r30, 0xFF	; 255
+   105a4:	ff 4d       	sbci	r31, 0xDF	; 223
+   105a6:	80 83       	st	Z, r24
+   105a8:	8f ef       	ldi	r24, 0xFF	; 255
+   105aa:	a8 1a       	sub	r10, r24
+   105ac:	b8 0a       	sbc	r11, r24
+			}
+			#else // __AVR_XMEGA__
+			buffer[offset++] = Flash_ReadByte(*address);
+			#endif // __AVR_XMEGA__
+			
+			Flash_WaitForSPM();
+   105ae:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+			
+			(*address)++;    // Select next word in memory.
+   105b2:	08 81       	ld	r16, Y
+   105b4:	19 81       	ldd	r17, Y+1	; 0x01
+   105b6:	2a 81       	ldd	r18, Y+2	; 0x02
+   105b8:	3b 81       	ldd	r19, Y+3	; 0x03
+   105ba:	0f 5f       	subi	r16, 0xFF	; 255
+   105bc:	1f 4f       	sbci	r17, 0xFF	; 255
+   105be:	2f 4f       	sbci	r18, 0xFF	; 255
+   105c0:	3f 4f       	sbci	r19, 0xFF	; 255
+   105c2:	08 83       	st	Y, r16
+   105c4:	19 83       	std	Y+1, r17	; 0x01
+   105c6:	2a 83       	std	Y+2, r18	; 0x02
+   105c8:	3b 83       	std	Y+3, r19	; 0x03
+			size--;          // Subtract two bytes from number of bytes to read
+   105ca:	81 e0       	ldi	r24, 0x01	; 1
+   105cc:	c8 1a       	sub	r12, r24
+   105ce:	d1 08       	sbc	r13, r1
+		} while (size);         // Repeat until all block has been read
+   105d0:	79 f6       	brne	.-98     	; 0x10570 <BlockRead+0x7e>
+		
+		(*address) >>= 1;       // Convert address back to Flash words again.
+   105d2:	36 95       	lsr	r19
+   105d4:	27 95       	ror	r18
+   105d6:	17 95       	ror	r17
+   105d8:	07 95       	ror	r16
+   105da:	08 83       	st	Y, r16
+   105dc:	19 83       	std	Y+1, r17	; 0x01
+   105de:	2a 83       	std	Y+2, r18	; 0x02
+   105e0:	3b 83       	std	Y+3, r19	; 0x03
+   105e2:	ab cf       	rjmp	.-170    	; 0x1053a <BlockRead+0x48>
+	clear_buffer();
+	
+	// send bytes
+	for (int i = 0; i < size2; i++)
+	{
+		send_char(buffer[i]);
+   105e4:	89 91       	ld	r24, Y+
+   105e6:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+	}
+}
+
+
+
+void BlockRead(unsigned int size, unsigned char mem, ADDR_T *address)
+   105ea:	ce 01       	movw	r24, r28
+   105ec:	81 50       	subi	r24, 0x01	; 1
+   105ee:	90 42       	sbci	r25, 0x20	; 32
+	0
+	)
+	clear_buffer();
+	
+	// send bytes
+	for (int i = 0; i < size2; i++)
+   105f0:	8e 15       	cp	r24, r14
+   105f2:	9f 05       	cpc	r25, r15
+   105f4:	bc f3       	brlt	.-18     	; 0x105e4 <BlockRead+0xf2>
+	{
+		send_char(buffer[i]);
+	}
+	
+}
+   105f6:	df 91       	pop	r29
+   105f8:	cf 91       	pop	r28
+   105fa:	1f 91       	pop	r17
+   105fc:	0f 91       	pop	r16
+   105fe:	ff 90       	pop	r15
+   10600:	ef 90       	pop	r14
+   10602:	df 90       	pop	r13
+   10604:	cf 90       	pop	r12
+   10606:	bf 90       	pop	r11
+   10608:	af 90       	pop	r10
+   1060a:	9f 90       	pop	r9
+   1060c:	08 95       	ret
+
+0001060e <crc16_block>:
+
+uint16_t crc16_block(uint32_t start, uint32_t length)
+{
+   1060e:	8f 92       	push	r8
+   10610:	9f 92       	push	r9
+   10612:	af 92       	push	r10
+   10614:	bf 92       	push	r11
+   10616:	cf 92       	push	r12
+   10618:	df 92       	push	r13
+   1061a:	ef 92       	push	r14
+   1061c:	ff 92       	push	r15
+   1061e:	0f 93       	push	r16
+   10620:	1f 93       	push	r17
+   10622:	cf 93       	push	r28
+   10624:	df 93       	push	r29
+   10626:	6b 01       	movw	r12, r22
+   10628:	7c 01       	movw	r14, r24
+   1062a:	49 01       	movw	r8, r18
+   1062c:	5a 01       	movw	r10, r20
+	uint16_t crc = 0;
+	
+	int bc = SPM_PAGESIZE;
+   1062e:	00 e0       	ldi	r16, 0x00	; 0
+   10630:	11 e0       	ldi	r17, 0x01	; 1
+	
+}
+
+uint16_t crc16_block(uint32_t start, uint32_t length)
+{
+	uint16_t crc = 0;
+   10632:	c0 e0       	ldi	r28, 0x00	; 0
+   10634:	d0 e0       	ldi	r29, 0x00	; 0
+	
+	int bc = SPM_PAGESIZE;
+	
+	for ( ; length > 0; length--)
+   10636:	1f c0       	rjmp	.+62     	; 0x10676 <crc16_block+0x68>
+	{
+		if (bc == SPM_PAGESIZE)
+   10638:	01 15       	cp	r16, r1
+   1063a:	81 e0       	ldi	r24, 0x01	; 1
+   1063c:	18 07       	cpc	r17, r24
+   1063e:	61 f4       	brne	.+24     	; 0x10658 <crc16_block+0x4a>
+		{
+			Flash_ReadFlashPage(buffer, start);
+   10640:	b7 01       	movw	r22, r14
+   10642:	a6 01       	movw	r20, r12
+   10644:	81 e0       	ldi	r24, 0x01	; 1
+   10646:	90 e2       	ldi	r25, 0x20	; 32
+   10648:	0e 94 51 81 	call	0x102a2	; 0x102a2 <SP_ReadFlashPage>
+			start += SPM_PAGESIZE;
+   1064c:	8f ef       	ldi	r24, 0xFF	; 255
+   1064e:	d8 1a       	sub	r13, r24
+   10650:	e8 0a       	sbc	r14, r24
+   10652:	f8 0a       	sbc	r15, r24
+			bc = 0;
+   10654:	00 e0       	ldi	r16, 0x00	; 0
+   10656:	10 e0       	ldi	r17, 0x00	; 0
+		}
+		
+		crc = _crc16_update(crc, buffer[bc]);
+   10658:	f8 01       	movw	r30, r16
+   1065a:	ef 5f       	subi	r30, 0xFF	; 255
+   1065c:	ff 4d       	sbci	r31, 0xDF	; 223
+   1065e:	60 81       	ld	r22, Z
+   10660:	ce 01       	movw	r24, r28
+   10662:	0e 94 b6 81 	call	0x1036c	; 0x1036c <_crc16_update>
+   10666:	ec 01       	movw	r28, r24
+		
+		bc++;
+   10668:	0f 5f       	subi	r16, 0xFF	; 255
+   1066a:	1f 4f       	sbci	r17, 0xFF	; 255
+{
+	uint16_t crc = 0;
+	
+	int bc = SPM_PAGESIZE;
+	
+	for ( ; length > 0; length--)
+   1066c:	81 e0       	ldi	r24, 0x01	; 1
+   1066e:	88 1a       	sub	r8, r24
+   10670:	91 08       	sbc	r9, r1
+   10672:	a1 08       	sbc	r10, r1
+   10674:	b1 08       	sbc	r11, r1
+   10676:	81 14       	cp	r8, r1
+   10678:	91 04       	cpc	r9, r1
+   1067a:	a1 04       	cpc	r10, r1
+   1067c:	b1 04       	cpc	r11, r1
+   1067e:	e1 f6       	brne	.-72     	; 0x10638 <crc16_block+0x2a>
+		
+		bc++;
+	}
+	
+	return crc;
+}
+   10680:	ce 01       	movw	r24, r28
+   10682:	df 91       	pop	r29
+   10684:	cf 91       	pop	r28
+   10686:	1f 91       	pop	r17
+   10688:	0f 91       	pop	r16
+   1068a:	ff 90       	pop	r15
+   1068c:	ef 90       	pop	r14
+   1068e:	df 90       	pop	r13
+   10690:	cf 90       	pop	r12
+   10692:	bf 90       	pop	r11
+   10694:	af 90       	pop	r10
+   10696:	9f 90       	pop	r9
+   10698:	8f 90       	pop	r8
+   1069a:	08 95       	ret
+
+0001069c <install_firmware>:
+
+void install_firmware()
+{
+   1069c:	cf 92       	push	r12
+   1069e:	df 92       	push	r13
+   106a0:	ef 92       	push	r14
+   106a2:	ff 92       	push	r15
+   106a4:	cf 93       	push	r28
+   106a6:	df 93       	push	r29
+	uint16_t crc;
+	uint16_t crc2;
+	
+	// read last block
+	Flash_ReadFlashPage(buffer, XB_APP_TEMP_START + XB_APP_TEMP_SIZE - SPM_PAGESIZE);
+   106a8:	40 e0       	ldi	r20, 0x00	; 0
+   106aa:	5f ef       	ldi	r21, 0xFF	; 255
+   106ac:	60 e0       	ldi	r22, 0x00	; 0
+   106ae:	70 e0       	ldi	r23, 0x00	; 0
+   106b0:	81 e0       	ldi	r24, 0x01	; 1
+   106b2:	90 e2       	ldi	r25, 0x20	; 32
+   106b4:	0e 94 51 81 	call	0x102a2	; 0x102a2 <SP_ReadFlashPage>
+	
+	// check for install command
+	if (buffer[SPM_PAGESIZE-6] == 'X' && buffer[SPM_PAGESIZE-5] == 'B' &&
+   106b8:	80 91 fb 20 	lds	r24, 0x20FB
+   106bc:	88 35       	cpi	r24, 0x58	; 88
+   106be:	09 f0       	breq	.+2      	; 0x106c2 <install_firmware+0x26>
+   106c0:	66 c0       	rjmp	.+204    	; 0x1078e <install_firmware+0xf2>
+   106c2:	80 91 fc 20 	lds	r24, 0x20FC
+   106c6:	82 34       	cpi	r24, 0x42	; 66
+   106c8:	09 f0       	breq	.+2      	; 0x106cc <install_firmware+0x30>
+   106ca:	61 c0       	rjmp	.+194    	; 0x1078e <install_firmware+0xf2>
+   106cc:	80 91 fd 20 	lds	r24, 0x20FD
+   106d0:	89 34       	cpi	r24, 0x49	; 73
+   106d2:	09 f0       	breq	.+2      	; 0x106d6 <install_firmware+0x3a>
+   106d4:	5c c0       	rjmp	.+184    	; 0x1078e <install_firmware+0xf2>
+	buffer[SPM_PAGESIZE-4] == 'I' && buffer[SPM_PAGESIZE-3] == 'F')
+   106d6:	80 91 fe 20 	lds	r24, 0x20FE
+   106da:	86 34       	cpi	r24, 0x46	; 70
+   106dc:	09 f0       	breq	.+2      	; 0x106e0 <install_firmware+0x44>
+   106de:	57 c0       	rjmp	.+174    	; 0x1078e <install_firmware+0xf2>
+	{
+		crc = (buffer[SPM_PAGESIZE-2] << 8) | buffer[SPM_PAGESIZE-1];
+   106e0:	90 91 ff 20 	lds	r25, 0x20FF
+   106e4:	80 e0       	ldi	r24, 0x00	; 0
+   106e6:	20 91 00 21 	lds	r18, 0x2100
+   106ea:	7c 01       	movw	r14, r24
+   106ec:	e2 2a       	or	r14, r18
+		
+		// skip last 6 bytes as they are the install command
+		crc2 = crc16_block(XB_APP_TEMP_START, XB_APP_TEMP_SIZE - 6);
+   106ee:	2a ef       	ldi	r18, 0xFA	; 250
+   106f0:	3f e7       	ldi	r19, 0x7F	; 127
+   106f2:	40 e0       	ldi	r20, 0x00	; 0
+   106f4:	50 e0       	ldi	r21, 0x00	; 0
+   106f6:	60 e0       	ldi	r22, 0x00	; 0
+   106f8:	70 e8       	ldi	r23, 0x80	; 128
+   106fa:	80 e0       	ldi	r24, 0x00	; 0
+   106fc:	90 e0       	ldi	r25, 0x00	; 0
+   106fe:	0e 94 07 83 	call	0x1060e	; 0x1060e <crc16_block>
+   10702:	c6 e0       	ldi	r28, 0x06	; 6
+   10704:	d0 e0       	ldi	r29, 0x00	; 0
+		
+		// crc last 6 bytes as empty
+		for (int i = 0; i < 6; i++)
+		crc2 = _crc16_update(crc2, 0xff);
+   10706:	6f ef       	ldi	r22, 0xFF	; 255
+   10708:	0e 94 b6 81 	call	0x1036c	; 0x1036c <_crc16_update>
+   1070c:	21 97       	sbiw	r28, 0x01	; 1
+		
+		// skip last 6 bytes as they are the install command
+		crc2 = crc16_block(XB_APP_TEMP_START, XB_APP_TEMP_SIZE - 6);
+		
+		// crc last 6 bytes as empty
+		for (int i = 0; i < 6; i++)
+   1070e:	d9 f7       	brne	.-10     	; 0x10706 <install_firmware+0x6a>
+		crc2 = _crc16_update(crc2, 0xff);
+		
+		if (crc == crc2)
+   10710:	e8 16       	cp	r14, r24
+   10712:	f9 06       	cpc	r15, r25
+   10714:	41 f0       	breq	.+16     	; 0x10726 <install_firmware+0x8a>
+			}
+		}
+		
+		xboot_app_temp_erase();
+	}
+}
+   10716:	df 91       	pop	r29
+   10718:	cf 91       	pop	r28
+   1071a:	ff 90       	pop	r15
+   1071c:	ef 90       	pop	r14
+   1071e:	df 90       	pop	r13
+   10720:	cf 90       	pop	r12
+				}
+				Flash_ProgramPage(ptr, buffer, 1);
+			}
+		}
+		
+		xboot_app_temp_erase();
+   10722:	0c 94 ef 86 	jmp	0x10dde	; 0x10dde <xboot_app_temp_erase>
+		
+		// crc last 6 bytes as empty
+		for (int i = 0; i < 6; i++)
+		crc2 = _crc16_update(crc2, 0xff);
+		
+		if (crc == crc2)
+   10726:	c1 2c       	mov	r12, r1
+   10728:	d1 2c       	mov	r13, r1
+   1072a:	76 01       	movw	r14, r12
+		{
+			for (uint32_t ptr = 0; ptr < XB_APP_SIZE; ptr += SPM_PAGESIZE)
+			{
+				#ifdef USE_LED
+				#ifdef __AVR_XMEGA__
+				LED_PORT.OUTTGL = (1 << LED_PIN);
+   1072c:	d2 e0       	ldi	r29, 0x02	; 2
+				Flash_ReadFlashPage(buffer, ptr + XB_APP_TEMP_START);
+				// if it's the last page, clear out the last 6 bytes
+				if (ptr >= XB_APP_SIZE - SPM_PAGESIZE)
+				{
+					for (int i = SPM_PAGESIZE-6; i < SPM_PAGESIZE; i++)
+					buffer[i] = 0xff;
+   1072e:	cf ef       	ldi	r28, 0xFF	; 255
+		{
+			for (uint32_t ptr = 0; ptr < XB_APP_SIZE; ptr += SPM_PAGESIZE)
+			{
+				#ifdef USE_LED
+				#ifdef __AVR_XMEGA__
+				LED_PORT.OUTTGL = (1 << LED_PIN);
+   10730:	d0 93 67 06 	sts	0x0667, r29
+	}
+	
+	return crc;
+}
+
+void install_firmware()
+   10734:	b7 01       	movw	r22, r14
+   10736:	a6 01       	movw	r20, r12
+   10738:	50 58       	subi	r21, 0x80	; 128
+   1073a:	6f 4f       	sbci	r22, 0xFF	; 255
+   1073c:	7f 4f       	sbci	r23, 0xFF	; 255
+				#else // __AVR_XMEGA__
+				LED_PORT ^= (1 << LED_PIN);
+				#endif // __AVR_XMEGA__
+				#endif // USE_LED
+				
+				Flash_ReadFlashPage(buffer, ptr + XB_APP_TEMP_START);
+   1073e:	81 e0       	ldi	r24, 0x01	; 1
+   10740:	90 e2       	ldi	r25, 0x20	; 32
+   10742:	0e 94 51 81 	call	0x102a2	; 0x102a2 <SP_ReadFlashPage>
+				// if it's the last page, clear out the last 6 bytes
+				if (ptr >= XB_APP_SIZE - SPM_PAGESIZE)
+   10746:	c1 14       	cp	r12, r1
+   10748:	8f e7       	ldi	r24, 0x7F	; 127
+   1074a:	d8 06       	cpc	r13, r24
+   1074c:	e1 04       	cpc	r14, r1
+   1074e:	f1 04       	cpc	r15, r1
+   10750:	61 f4       	brne	.+24     	; 0x1076a <install_firmware+0xce>
+				{
+					for (int i = SPM_PAGESIZE-6; i < SPM_PAGESIZE; i++)
+					buffer[i] = 0xff;
+   10752:	c0 93 fb 20 	sts	0x20FB, r28
+   10756:	c0 93 fc 20 	sts	0x20FC, r28
+   1075a:	c0 93 fd 20 	sts	0x20FD, r28
+   1075e:	c0 93 fe 20 	sts	0x20FE, r28
+   10762:	c0 93 ff 20 	sts	0x20FF, r28
+   10766:	c0 93 00 21 	sts	0x2100, r28
+				}
+				Flash_ProgramPage(ptr, buffer, 1);
+   1076a:	21 e0       	ldi	r18, 0x01	; 1
+   1076c:	41 e0       	ldi	r20, 0x01	; 1
+   1076e:	50 e2       	ldi	r21, 0x20	; 32
+   10770:	c7 01       	movw	r24, r14
+   10772:	b6 01       	movw	r22, r12
+   10774:	0e 94 ac 85 	call	0x10b58	; 0x10b58 <Flash_ProgramPage>
+		for (int i = 0; i < 6; i++)
+		crc2 = _crc16_update(crc2, 0xff);
+		
+		if (crc == crc2)
+		{
+			for (uint32_t ptr = 0; ptr < XB_APP_SIZE; ptr += SPM_PAGESIZE)
+   10778:	8f ef       	ldi	r24, 0xFF	; 255
+   1077a:	d8 1a       	sub	r13, r24
+   1077c:	e8 0a       	sbc	r14, r24
+   1077e:	f8 0a       	sbc	r15, r24
+   10780:	c1 14       	cp	r12, r1
+   10782:	80 e8       	ldi	r24, 0x80	; 128
+   10784:	d8 06       	cpc	r13, r24
+   10786:	e1 04       	cpc	r14, r1
+   10788:	f1 04       	cpc	r15, r1
+   1078a:	91 f6       	brne	.-92     	; 0x10730 <install_firmware+0x94>
+   1078c:	c4 cf       	rjmp	.-120    	; 0x10716 <install_firmware+0x7a>
+			}
+		}
+		
+		xboot_app_temp_erase();
+	}
+}
+   1078e:	df 91       	pop	r29
+   10790:	cf 91       	pop	r28
+   10792:	ff 90       	pop	r15
+   10794:	ef 90       	pop	r14
+   10796:	df 90       	pop	r13
+   10798:	cf 90       	pop	r12
+   1079a:	08 95       	ret
+
+0001079c <main>:
+
+// End Modified by Evolution Controllers
+
+// Main code
+int main(void)
+{
+   1079c:	cf 92       	push	r12
+   1079e:	df 92       	push	r13
+   107a0:	ef 92       	push	r14
+   107a2:	ff 92       	push	r15
+   107a4:	0f 93       	push	r16
+   107a6:	1f 93       	push	r17
+   107a8:	cf 93       	push	r28
+   107aa:	df 93       	push	r29
+   107ac:	cd b7       	in	r28, 0x3d	; 61
+   107ae:	de b7       	in	r29, 0x3e	; 62
+   107b0:	25 97       	sbiw	r28, 0x05	; 5
+   107b2:	cd bf       	out	0x3d, r28	; 61
+   107b4:	de bf       	out	0x3e, r29	; 62
+	ADDR_T address = 0;
+   107b6:	19 82       	std	Y+1, r1	; 0x01
+   107b8:	1a 82       	std	Y+2, r1	; 0x02
+   107ba:	1b 82       	std	Y+3, r1	; 0x03
+   107bc:	1c 82       	std	Y+4, r1	; 0x04
+	
+	#ifdef USE_I2C_ADDRESS_NEGOTIATION
+	unsigned short devid_bit;
+	#endif // USE_I2C_ADDRESS_NEGOTIATION
+	
+	comm_mode = MODE_UNDEF;
+   107be:	10 92 00 20 	sts	0x2000, r1
+	#else // USE_32MHZ_RC
+	#if (F_CPU != 2000000L)
+	#error F_CPU must match oscillator setting!
+	#endif // F_CPU
+	#ifdef USE_DFLL
+	DFLLRC2M.CTRL = DFLL_ENABLE_bm;
+   107c2:	81 e0       	ldi	r24, 0x01	; 1
+   107c4:	80 93 68 00 	sts	0x0068, r24
+	
+	#ifdef __AVR_XMEGA__
+	
+	#ifdef USE_LED
+	// Initialize LED pin
+	LED_PORT.DIRSET = (1 << LED_PIN);
+   107c8:	82 e0       	ldi	r24, 0x02	; 2
+   107ca:	80 93 61 06 	sts	0x0661, r24
+	#if LED_PIN_INV
+	LED_PORT.OUTCLR = (1 << LED_PIN);
+	#else
+	LED_PORT.OUTSET = (1 << LED_PIN);
+   107ce:	80 93 65 06 	sts	0x0665, r24
+	
+	#endif // __AVR_XMEGA__
+	
+	#ifdef USE_UART
+	// Initialize UART
+	uart_init();
+   107d2:	0e 94 c5 86 	call	0x10d8a	; 0x10d8a <uart_init>
+	
+	#ifdef __AVR_XMEGA__
+	
+	#ifdef UART_RX_PUEN
+	// Enable RX pin pullup
+	UART_RX_PIN_CTRL = 0x18;
+   107d6:	88 e1       	ldi	r24, 0x18	; 24
+   107d8:	80 93 52 06 	sts	0x0652, r24
+   107dc:	40 91 00 20 	lds	r20, 0x2000
+	#else
+		#define ENTER_BLINK_WAIT_T1 ENTER_BLINK_WAIT_NOPULSE
+		#define ENTER_BLINK_WAIT_T2 ENTER_BLINK_WAIT_PULSE	
+	#endif
+	
+	k = ENTER_BLINK_COUNT*2;
+   107e0:	3e ef       	ldi	r19, 0xFE	; 254
+	//j = ENTER_BLINK_WAIT;
+	j = ENTER_BLINK_WAIT_T1;
+   107e2:	8b ed       	ldi	r24, 0xDB	; 219
+   107e4:	91 e0       	ldi	r25, 0x01	; 1
+   107e6:	a0 e0       	ldi	r26, 0x00	; 0
+   107e8:	b0 e0       	ldi	r27, 0x00	; 0
+				
+			#else
+			
+			#ifdef USE_LED
+			#ifdef __AVR_XMEGA__
+			LED_PORT.OUTTGL = (1 << LED_PIN);
+   107ea:	52 e0       	ldi	r21, 0x02	; 2
+	//j = ENTER_BLINK_WAIT;
+	j = ENTER_BLINK_WAIT_T1;
+	while (!in_bootloader && k > 0)
+	{	
+		
+		if( j-- <=0 )
+   107ec:	00 97       	sbiw	r24, 0x00	; 0
+   107ee:	a1 05       	cpc	r26, r1
+   107f0:	b1 05       	cpc	r27, r1
+   107f2:	21 f0       	breq	.+8      	; 0x107fc <main+0x60>
+   107f4:	01 97       	sbiw	r24, 0x01	; 1
+   107f6:	a1 09       	sbc	r26, r1
+   107f8:	b1 09       	sbc	r27, r1
+   107fa:	0e c0       	rjmp	.+28     	; 0x10818 <main+0x7c>
+				
+			#else
+			
+			#ifdef USE_LED
+			#ifdef __AVR_XMEGA__
+			LED_PORT.OUTTGL = (1 << LED_PIN);
+   107fc:	50 93 67 06 	sts	0x0667, r21
+			#endif // __AVR_XMEGA__
+			#endif // USE_LED
+			
+			#endif //ENTER_BLINK_NOP
+			
+			j = k&0x01 ? ENTER_BLINK_WAIT_T1 : ENTER_BLINK_WAIT_T2;
+   10800:	30 ff       	sbrs	r19, 0
+   10802:	05 c0       	rjmp	.+10     	; 0x1080e <main+0x72>
+   10804:	8b ed       	ldi	r24, 0xDB	; 219
+   10806:	91 e0       	ldi	r25, 0x01	; 1
+   10808:	a0 e0       	ldi	r26, 0x00	; 0
+   1080a:	b0 e0       	ldi	r27, 0x00	; 0
+   1080c:	04 c0       	rjmp	.+8      	; 0x10816 <main+0x7a>
+   1080e:	84 e0       	ldi	r24, 0x04	; 4
+   10810:	90 e0       	ldi	r25, 0x00	; 0
+   10812:	a0 e0       	ldi	r26, 0x00	; 0
+   10814:	b0 e0       	ldi	r27, 0x00	; 0
+			k--;
+   10816:	31 50       	subi	r19, 0x01	; 1
+		#ifdef USE_ENTER_UART
+		// Check for received character
+		#ifdef ENTER_UART_NEED_SYNC
+		if (uart_char_received() && (uart_cur_char() == CMD_SYNC))
+		#else // ENTER_UART_NEED_SYNC
+		if (uart_char_received())
+   10818:	20 91 a1 08 	lds	r18, 0x08A1
+   1081c:	27 ff       	sbrs	r18, 7
+   1081e:	03 c0       	rjmp	.+6      	; 0x10826 <main+0x8a>
+		#endif // ENTER_UART_NEED_SYNC
+		{
+			in_bootloader = 1;
+			comm_mode = MODE_UART;
+   10820:	41 e0       	ldi	r20, 0x01	; 1
+		if (uart_char_received() && (uart_cur_char() == CMD_SYNC))
+		#else // ENTER_UART_NEED_SYNC
+		if (uart_char_received())
+		#endif // ENTER_UART_NEED_SYNC
+		{
+			in_bootloader = 1;
+   10822:	21 e0       	ldi	r18, 0x01	; 1
+   10824:	01 c0       	rjmp	.+2      	; 0x10828 <main+0x8c>
+		#ifdef USE_ENTER_UART
+		// Check for received character
+		#ifdef ENTER_UART_NEED_SYNC
+		if (uart_char_received() && (uart_cur_char() == CMD_SYNC))
+		#else // ENTER_UART_NEED_SYNC
+		if (uart_char_received())
+   10826:	20 e0       	ldi	r18, 0x00	; 0
+		
+		// --------------------------------------------------
+		// End main trigger section
+		
+		#ifdef __AVR_XMEGA__
+		WDT_Reset();
+   10828:	a8 95       	wdr
+	#endif
+	
+	k = ENTER_BLINK_COUNT*2;
+	//j = ENTER_BLINK_WAIT;
+	j = ENTER_BLINK_WAIT_T1;
+	while (!in_bootloader && k > 0)
+   1082a:	22 23       	and	r18, r18
+   1082c:	21 f0       	breq	.+8      	; 0x10836 <main+0x9a>
+   1082e:	40 93 00 20 	sts	0x2000, r20
+   10832:	21 e0       	ldi	r18, 0x01	; 1
+   10834:	04 c0       	rjmp	.+8      	; 0x1083e <main+0xa2>
+   10836:	31 11       	cpse	r19, r1
+   10838:	d9 cf       	rjmp	.-78     	; 0x107ec <main+0x50>
+   1083a:	40 93 00 20 	sts	0x2000, r20
+	// Enable interrupts
+	sei();
+	#endif // USE_INTERRUPTS
+	
+	#ifdef USE_WATCHDOG
+	WDT_EnableAndSetTimeout();
+   1083e:	2d 83       	std	Y+5, r18	; 0x05
+   10840:	0e 94 dc 86 	call	0x10db8	; 0x10db8 <WDT_EnableAndSetTimeout>
+int main(void)
+{
+	ADDR_T address = 0;
+	unsigned char in_bootloader = 0;
+	unsigned char val = 0;
+	int i = 0;
+   10844:	00 e0       	ldi	r16, 0x00	; 0
+   10846:	10 e0       	ldi	r17, 0x00	; 0
+	
+	// Main bootloader
+	while (in_bootloader) {
+		#ifdef USE_LED
+		#ifdef __AVR_XMEGA__
+		LED_PORT.OUTTGL = (1 << LED_PIN);
+   10848:	b2 e0       	ldi	r27, 0x02	; 2
+   1084a:	db 2e       	mov	r13, r27
+   1084c:	67 c1       	rjmp	.+718    	; 0x10b1c <main+0x380>
+   1084e:	d0 92 67 06 	sts	0x0667, r13
+		#else // __AVR_XMEGA__
+		LED_PORT ^= (1 << LED_PIN);
+		#endif // __AVR_XMEGA__
+		#endif // USE_LED
+		
+		val = get_char();
+   10852:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+		
+		#ifdef USE_WATCHDOG
+		WDT_Reset();
+   10856:	a8 95       	wdr
+		#endif // USE_WATCHDOG
+		
+		// Main bootloader parser
+		// check autoincrement status
+		if (val == CMD_CHECK_AUTOINCREMENT)
+   10858:	81 36       	cpi	r24, 0x61	; 97
+   1085a:	11 f4       	brne	.+4      	; 0x10860 <main+0xc4>
+		{
+			// yes, it is supported
+			send_char(REPLY_YES);
+   1085c:	89 e5       	ldi	r24, 0x59	; 89
+   1085e:	58 c1       	rjmp	.+688    	; 0x10b10 <main+0x374>
+		}
+		// Set address
+		else if (val == CMD_SET_ADDRESS)
+   10860:	81 34       	cpi	r24, 0x41	; 65
+   10862:	29 f4       	brne	.+10     	; 0x1086e <main+0xd2>
+		{
+			// Read address high then low
+			address = get_2bytes();
+   10864:	0e 94 ef 81 	call	0x103de	; 0x103de <get_2bytes>
+   10868:	a0 e0       	ldi	r26, 0x00	; 0
+   1086a:	b0 e0       	ldi	r27, 0x00	; 0
+   1086c:	73 c0       	rjmp	.+230    	; 0x10954 <main+0x1b8>
+			// acknowledge
+			send_char(REPLY_ACK);
+		}
+		// Extended address
+		else if (val == CMD_SET_EXT_ADDRESS)
+   1086e:	88 34       	cpi	r24, 0x48	; 72
+   10870:	39 f4       	brne	.+14     	; 0x10880 <main+0xe4>
+		{
+			// Read address high then low
+			//address = ((ADDR_T)get_char() << 16) | get_2bytes();
+			asm volatile (
+   10872:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10876:	a8 2f       	mov	r26, r24
+   10878:	0e 94 ef 81 	call	0x103de	; 0x103de <get_2bytes>
+   1087c:	bb 27       	eor	r27, r27
+   1087e:	6a c0       	rjmp	.+212    	; 0x10954 <main+0x1b8>
+			
+			// acknowledge
+			send_char(REPLY_ACK);
+		}
+		// Chip erase
+		else if (val == CMD_CHIP_ERASE)
+   10880:	85 36       	cpi	r24, 0x65	; 101
+   10882:	61 f4       	brne	.+24     	; 0x1089c <main+0x100>
+		{
+			// Erase the application section
+			Flash_EraseApplicationSection();
+   10884:	0e 94 2c 81 	call	0x10258	; 0x10258 <SP_EraseApplicationSection>
+			// Wait for completion
+			#ifdef __AVR_XMEGA__
+			#ifdef USE_WATCHDOG
+			while (NVM_STATUS & NVM_NVMBUSY_bp)
+   10888:	01 c0       	rjmp	.+2      	; 0x1088c <main+0xf0>
+			{
+				// reset watchdog while waiting for erase completion
+				WDT_Reset();
+   1088a:	a8 95       	wdr
+			// Erase the application section
+			Flash_EraseApplicationSection();
+			// Wait for completion
+			#ifdef __AVR_XMEGA__
+			#ifdef USE_WATCHDOG
+			while (NVM_STATUS & NVM_NVMBUSY_bp)
+   1088c:	80 91 cf 01 	lds	r24, 0x01CF
+   10890:	87 70       	andi	r24, 0x07	; 7
+   10892:	d9 f7       	brne	.-10     	; 0x1088a <main+0xee>
+			SP_WaitForSPM();
+			#endif // USE_WATCHDOG
+			#endif // __AVR_XMEGA__
+			
+			// Erase EEPROM
+			EEPROM_erase_all();
+   10894:	0e 94 bd 86 	call	0x10d7a	; 0x10d7a <EEPROM_erase_all>
+			#ifdef NEED_CODE_PROTECTION
+			protected = 0;
+			#endif // NEED_CODE_PROTECTION
+			
+			// acknowledge
+			send_char(REPLY_ACK);
+   10898:	8d e0       	ldi	r24, 0x0D	; 13
+   1089a:	3a c1       	rjmp	.+628    	; 0x10b10 <main+0x374>
+		}
+		#ifdef ENABLE_BLOCK_SUPPORT
+		// Check block load support
+		else if (val == CMD_CHECK_BLOCK_SUPPORT )
+   1089c:	82 36       	cpi	r24, 0x62	; 98
+   1089e:	29 f4       	brne	.+10     	; 0x108aa <main+0x10e>
+		{
+			// yes, it is supported
+			send_char(REPLY_YES);
+   108a0:	89 e5       	ldi	r24, 0x59	; 89
+   108a2:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			// Send block size (page size)
+			send_char((SPM_PAGESIZE >> 8) & 0xFF);
+   108a6:	81 e0       	ldi	r24, 0x01	; 1
+   108a8:	bc c0       	rjmp	.+376    	; 0x10a22 <main+0x286>
+			send_char(SPM_PAGESIZE & 0xFF);
+		}
+		// Block load
+		else if (val == CMD_BLOCK_LOAD)
+   108aa:	82 34       	cpi	r24, 0x42	; 66
+   108ac:	89 f4       	brne	.+34     	; 0x108d0 <main+0x134>
+		{
+			// Block size
+			i = get_2bytes();
+   108ae:	0e 94 ef 81 	call	0x103de	; 0x103de <get_2bytes>
+   108b2:	c8 2e       	mov	r12, r24
+   108b4:	08 2f       	mov	r16, r24
+   108b6:	19 2f       	mov	r17, r25
+			// Memory type
+			val = get_char();
+   108b8:	9d 83       	std	Y+5, r25	; 0x05
+   108ba:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+			// Load it
+			send_char(BlockLoad(i, val, &address));
+   108be:	ae 01       	movw	r20, r28
+   108c0:	4f 5f       	subi	r20, 0xFF	; 255
+   108c2:	5f 4f       	sbci	r21, 0xFF	; 255
+   108c4:	68 2f       	mov	r22, r24
+   108c6:	8c 2d       	mov	r24, r12
+   108c8:	9d 81       	ldd	r25, Y+5	; 0x05
+   108ca:	0e 94 f7 81 	call	0x103ee	; 0x103ee <BlockLoad>
+   108ce:	20 c1       	rjmp	.+576    	; 0x10b10 <main+0x374>
+		}
+		// Block read
+		else if (val == CMD_BLOCK_READ)
+   108d0:	87 36       	cpi	r24, 0x67	; 103
+   108d2:	89 f4       	brne	.+34     	; 0x108f6 <main+0x15a>
+		{
+			// Block size
+			i = get_2bytes();
+   108d4:	0e 94 ef 81 	call	0x103de	; 0x103de <get_2bytes>
+   108d8:	c8 2e       	mov	r12, r24
+   108da:	08 2f       	mov	r16, r24
+   108dc:	19 2f       	mov	r17, r25
+			// Memory type
+			val = get_char();
+   108de:	9d 83       	std	Y+5, r25	; 0x05
+   108e0:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+			// Read it
+			BlockRead(i, val, &address);
+   108e4:	ae 01       	movw	r20, r28
+   108e6:	4f 5f       	subi	r20, 0xFF	; 255
+   108e8:	5f 4f       	sbci	r21, 0xFF	; 255
+   108ea:	68 2f       	mov	r22, r24
+   108ec:	8c 2d       	mov	r24, r12
+   108ee:	9d 81       	ldd	r25, Y+5	; 0x05
+   108f0:	0e 94 79 82 	call	0x104f2	; 0x104f2 <BlockRead>
+   108f4:	0f c1       	rjmp	.+542    	; 0x10b14 <main+0x378>
+		}
+		#endif // ENABLE_BLOCK_SUPPORT
+		#ifdef ENABLE_FLASH_BYTE_SUPPORT
+		// Read program memory byte
+		else if (val == CMD_READ_BYTE)
+   108f6:	82 35       	cpi	r24, 0x52	; 82
+   108f8:	81 f4       	brne	.+32     	; 0x1091a <main+0x17e>
+		{
+			unsigned int w = Flash_ReadWord((address << 1));
+   108fa:	69 81       	ldd	r22, Y+1	; 0x01
+   108fc:	7a 81       	ldd	r23, Y+2	; 0x02
+   108fe:	8b 81       	ldd	r24, Y+3	; 0x03
+   10900:	9c 81       	ldd	r25, Y+4	; 0x04
+   10902:	66 0f       	add	r22, r22
+   10904:	77 1f       	adc	r23, r23
+   10906:	88 1f       	adc	r24, r24
+   10908:	99 1f       	adc	r25, r25
+   1090a:	0e 94 07 81 	call	0x1020e	; 0x1020e <SP_ReadWord>
+   1090e:	c8 2e       	mov	r12, r24
+			#ifdef ENABLE_CODE_PROTECTION
+			if (protected)
+			w = 0xffff;
+			#endif // ENABLE_CODE_PROTECTION
+			
+			send_char(w >> 8);
+   10910:	89 2f       	mov	r24, r25
+   10912:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char(w);
+   10916:	8c 2d       	mov	r24, r12
+   10918:	48 c0       	rjmp	.+144    	; 0x109aa <main+0x20e>
+			
+			address++;
+		}
+		// Write program memory low byte
+		else if (val == CMD_WRITE_LOW_BYTE)
+   1091a:	83 36       	cpi	r24, 0x63	; 99
+   1091c:	29 f4       	brne	.+10     	; 0x10928 <main+0x18c>
+		{
+			// get low byte
+			i = get_char();
+   1091e:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10922:	08 2f       	mov	r16, r24
+   10924:	10 e0       	ldi	r17, 0x00	; 0
+   10926:	b8 cf       	rjmp	.-144    	; 0x10898 <main+0xfc>
+			send_char(REPLY_ACK);
+		}
+		// Write program memory high byte
+		else if (val == CMD_WRITE_HIGH_BYTE)
+   10928:	83 34       	cpi	r24, 0x43	; 67
+   1092a:	c9 f4       	brne	.+50     	; 0x1095e <main+0x1c2>
+		{
+			// get high byte; combine
+			i |= (get_char() << 8);
+   1092c:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10930:	f8 2e       	mov	r15, r24
+   10932:	e1 2c       	mov	r14, r1
+   10934:	0e 29       	or	r16, r14
+   10936:	1f 29       	or	r17, r15
+			Flash_LoadFlashWord((address << 1), i);
+   10938:	89 81       	ldd	r24, Y+1	; 0x01
+   1093a:	9a 81       	ldd	r25, Y+2	; 0x02
+   1093c:	b8 01       	movw	r22, r16
+   1093e:	88 0f       	add	r24, r24
+   10940:	99 1f       	adc	r25, r25
+   10942:	0e 94 39 81 	call	0x10272	; 0x10272 <SP_LoadFlashWord>
+			address++;
+   10946:	89 81       	ldd	r24, Y+1	; 0x01
+   10948:	9a 81       	ldd	r25, Y+2	; 0x02
+   1094a:	ab 81       	ldd	r26, Y+3	; 0x03
+   1094c:	bc 81       	ldd	r27, Y+4	; 0x04
+   1094e:	01 96       	adiw	r24, 0x01	; 1
+   10950:	a1 1d       	adc	r26, r1
+   10952:	b1 1d       	adc	r27, r1
+   10954:	89 83       	std	Y+1, r24	; 0x01
+   10956:	9a 83       	std	Y+2, r25	; 0x02
+   10958:	ab 83       	std	Y+3, r26	; 0x03
+   1095a:	bc 83       	std	Y+4, r27	; 0x04
+   1095c:	9d cf       	rjmp	.-198    	; 0x10898 <main+0xfc>
+			send_char(REPLY_ACK);
+		}
+		// Write page
+		else if (val == CMD_WRITE_PAGE)
+   1095e:	8d 36       	cpi	r24, 0x6D	; 109
+   10960:	a1 f4       	brne	.+40     	; 0x1098a <main+0x1ee>
+		{
+			if (address >= (APP_SECTION_SIZE>>1))
+   10962:	89 81       	ldd	r24, Y+1	; 0x01
+   10964:	9a 81       	ldd	r25, Y+2	; 0x02
+   10966:	ab 81       	ldd	r26, Y+3	; 0x03
+   10968:	bc 81       	ldd	r27, Y+4	; 0x04
+   1096a:	81 15       	cp	r24, r1
+   1096c:	20 e8       	ldi	r18, 0x80	; 128
+   1096e:	92 07       	cpc	r25, r18
+   10970:	a1 05       	cpc	r26, r1
+   10972:	b1 05       	cpc	r27, r1
+   10974:	08 f0       	brcs	.+2      	; 0x10978 <main+0x1dc>
+   10976:	cb c0       	rjmp	.+406    	; 0x10b0e <main+0x372>
+				// don't allow bootloader overwrite
+				send_char(REPLY_ERROR);
+			}
+			else
+			{
+				Flash_WriteApplicationPage( address << 1);
+   10978:	bc 01       	movw	r22, r24
+   1097a:	cd 01       	movw	r24, r26
+   1097c:	66 0f       	add	r22, r22
+   1097e:	77 1f       	adc	r23, r23
+   10980:	88 1f       	adc	r24, r24
+   10982:	99 1f       	adc	r25, r25
+   10984:	0e 94 62 81 	call	0x102c4	; 0x102c4 <SP_WriteApplicationPage>
+   10988:	87 cf       	rjmp	.-242    	; 0x10898 <main+0xfc>
+			}
+		}
+		#endif // ENABLE_FLASH_BYTE_SUPPORT
+		#ifdef ENABLE_EEPROM_BYTE_SUPPORT
+		// Write EEPROM memory
+		else if (val == CMD_WRITE_EEPROM_BYTE)
+   1098a:	84 34       	cpi	r24, 0x44	; 68
+   1098c:	41 f4       	brne	.+16     	; 0x1099e <main+0x202>
+		{
+			EEPROM_write_byte(address, get_char());
+   1098e:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10992:	68 2f       	mov	r22, r24
+   10994:	89 81       	ldd	r24, Y+1	; 0x01
+   10996:	9a 81       	ldd	r25, Y+2	; 0x02
+   10998:	0e 94 0e 86 	call	0x10c1c	; 0x10c1c <EEPROM_write_byte>
+   1099c:	08 c0       	rjmp	.+16     	; 0x109ae <main+0x212>
+			address++;
+		}
+		// Read EEPROM memory
+		else if (val == CMD_READ_EEPROM_BYTE)
+   1099e:	84 36       	cpi	r24, 0x64	; 100
+   109a0:	91 f4       	brne	.+36     	; 0x109c6 <main+0x22a>
+		{
+			char c = EEPROM_read_byte(address);
+   109a2:	89 81       	ldd	r24, Y+1	; 0x01
+   109a4:	9a 81       	ldd	r25, Y+2	; 0x02
+   109a6:	0e 94 e8 85 	call	0x10bd0	; 0x10bd0 <EEPROM_read_byte>
+			#ifdef ENABLE_EEPROM_PROTECTION
+			if (protected)
+			c = 0xff;
+			#endif // ENABLE_EEPROM_PROTECTION
+			
+			send_char(c);
+   109aa:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			address++;
+   109ae:	89 81       	ldd	r24, Y+1	; 0x01
+   109b0:	9a 81       	ldd	r25, Y+2	; 0x02
+   109b2:	ab 81       	ldd	r26, Y+3	; 0x03
+   109b4:	bc 81       	ldd	r27, Y+4	; 0x04
+   109b6:	01 96       	adiw	r24, 0x01	; 1
+   109b8:	a1 1d       	adc	r26, r1
+   109ba:	b1 1d       	adc	r27, r1
+   109bc:	89 83       	std	Y+1, r24	; 0x01
+   109be:	9a 83       	std	Y+2, r25	; 0x02
+   109c0:	ab 83       	std	Y+3, r26	; 0x03
+   109c2:	bc 83       	std	Y+4, r27	; 0x04
+   109c4:	a7 c0       	rjmp	.+334    	; 0x10b14 <main+0x378>
+		}
+		#endif // ENABLE_EEPROM_BYTE_SUPPORT
+		#ifdef ENABLE_LOCK_BITS
+		#ifdef __AVR_XMEGA__
+		// Write lockbits
+		else if (val == CMD_WRITE_LOCK_BITS)
+   109c6:	8c 36       	cpi	r24, 0x6C	; 108
+   109c8:	29 f4       	brne	.+10     	; 0x109d4 <main+0x238>
+		{
+			SP_WriteLockBits( get_char() );
+   109ca:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   109ce:	0e 94 1d 81 	call	0x1023a	; 0x1023a <SP_WriteLockBits>
+   109d2:	62 cf       	rjmp	.-316    	; 0x10898 <main+0xfc>
+			send_char(REPLY_ACK);
+		}
+		// Read lockbits
+		else if (val == CMD_READ_LOCK_BITS)
+   109d4:	82 37       	cpi	r24, 0x72	; 114
+   109d6:	19 f4       	brne	.+6      	; 0x109de <main+0x242>
+		{
+			send_char(SP_ReadLockBits());
+   109d8:	0e 94 21 81 	call	0x10242	; 0x10242 <SP_ReadLockBits>
+   109dc:	99 c0       	rjmp	.+306    	; 0x10b10 <main+0x374>
+		#endif // __AVR_XMEGA__
+		#endif // ENABLE_LOCK_BITS
+		#ifdef ENABLE_FUSE_BITS
+		#ifdef __AVR_XMEGA__
+		// Read low fuse bits
+		else if (val == CMD_READ_LOW_FUSE_BITS)
+   109de:	86 34       	cpi	r24, 0x46	; 70
+   109e0:	11 f4       	brne	.+4      	; 0x109e6 <main+0x24a>
+		{
+			send_char(SP_ReadFuseByte(0));
+   109e2:	80 e0       	ldi	r24, 0x00	; 0
+   109e4:	07 c0       	rjmp	.+14     	; 0x109f4 <main+0x258>
+		}
+		// Read high fuse bits
+		else if (val == CMD_READ_HIGH_FUSE_BITS)
+   109e6:	8e 34       	cpi	r24, 0x4E	; 78
+   109e8:	11 f4       	brne	.+4      	; 0x109ee <main+0x252>
+		{
+			send_char(SP_ReadFuseByte(1));
+   109ea:	81 e0       	ldi	r24, 0x01	; 1
+   109ec:	03 c0       	rjmp	.+6      	; 0x109f4 <main+0x258>
+		}
+		// Read extended fuse bits
+		else if (val == CMD_READ_EXT_FUSE_BITS)
+   109ee:	81 35       	cpi	r24, 0x51	; 81
+   109f0:	21 f4       	brne	.+8      	; 0x109fa <main+0x25e>
+		{
+			send_char(SP_ReadFuseByte(2));
+   109f2:	82 e0       	ldi	r24, 0x02	; 2
+   109f4:	0e 94 12 81 	call	0x10224	; 0x10224 <SP_ReadFuseByte>
+   109f8:	8b c0       	rjmp	.+278    	; 0x10b10 <main+0x374>
+		}
+		#endif // __AVR_XMEGA__
+		#endif // ENABLE_FUSE_BITS
+		// Enter and leave programming mode
+		else if ((val == CMD_ENTER_PROG_MODE) || (val == CMD_LEAVE_PROG_MODE))
+   109fa:	80 35       	cpi	r24, 0x50	; 80
+   109fc:	09 f4       	brne	.+2      	; 0x10a00 <main+0x264>
+   109fe:	4c cf       	rjmp	.-360    	; 0x10898 <main+0xfc>
+   10a00:	8c 34       	cpi	r24, 0x4C	; 76
+   10a02:	09 f4       	brne	.+2      	; 0x10a06 <main+0x26a>
+   10a04:	49 cf       	rjmp	.-366    	; 0x10898 <main+0xfc>
+		{
+			// just acknowledge
+			send_char(REPLY_ACK);
+		}
+		// Exit bootloader
+		else if (val == CMD_EXIT_BOOTLOADER)
+   10a06:	85 34       	cpi	r24, 0x45	; 69
+   10a08:	29 f4       	brne	.+10     	; 0x10a14 <main+0x278>
+		{
+			in_bootloader = 0;
+			send_char(REPLY_ACK);
+   10a0a:	8d e0       	ldi	r24, 0x0D	; 13
+   10a0c:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char(REPLY_ACK);
+		}
+		// Exit bootloader
+		else if (val == CMD_EXIT_BOOTLOADER)
+		{
+			in_bootloader = 0;
+   10a10:	20 e0       	ldi	r18, 0x00	; 0
+   10a12:	81 c0       	rjmp	.+258    	; 0x10b16 <main+0x37a>
+			send_char(REPLY_ACK);
+		}
+		// Get programmer type
+		else if (val == CMD_PROGRAMMER_TYPE)
+   10a14:	80 37       	cpi	r24, 0x70	; 112
+   10a16:	11 f4       	brne	.+4      	; 0x10a1c <main+0x280>
+		{
+			// serial
+			send_char('S');
+   10a18:	83 e5       	ldi	r24, 0x53	; 83
+   10a1a:	7a c0       	rjmp	.+244    	; 0x10b10 <main+0x374>
+		}
+		// Return supported device codes
+		else if (val == CMD_DEVICE_CODE)
+   10a1c:	84 37       	cpi	r24, 0x74	; 116
+   10a1e:	29 f4       	brne	.+10     	; 0x10a2a <main+0x28e>
+		{
+			// send only this device
+			send_char(123); // TODO
+   10a20:	8b e7       	ldi	r24, 0x7B	; 123
+   10a22:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			// terminator
+			send_char(0);
+   10a26:	80 e0       	ldi	r24, 0x00	; 0
+   10a28:	73 c0       	rjmp	.+230    	; 0x10b10 <main+0x374>
+		}
+		// Set LED, clear LED, and set device type
+		else if ((val == CMD_SET_LED) || (val == CMD_CLEAR_LED) || (val == CMD_SET_TYPE))
+   10a2a:	98 2f       	mov	r25, r24
+   10a2c:	98 57       	subi	r25, 0x78	; 120
+   10a2e:	92 30       	cpi	r25, 0x02	; 2
+   10a30:	10 f0       	brcs	.+4      	; 0x10a36 <main+0x29a>
+   10a32:	84 35       	cpi	r24, 0x54	; 84
+   10a34:	19 f4       	brne	.+6      	; 0x10a3c <main+0x2a0>
+		{
+			// discard parameter
+			get_char();
+   10a36:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+   10a3a:	2e cf       	rjmp	.-420    	; 0x10898 <main+0xfc>
+			send_char(REPLY_ACK);
+		}
+		// Return program identifier
+		else if (val == CMD_PROGRAM_ID)
+   10a3c:	83 35       	cpi	r24, 0x53	; 83
+   10a3e:	a1 f4       	brne	.+40     	; 0x10a68 <main+0x2cc>
+		{
+			send_char('X');
+   10a40:	88 e5       	ldi	r24, 0x58	; 88
+   10a42:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('B');
+   10a46:	82 e4       	ldi	r24, 0x42	; 66
+   10a48:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('o');
+   10a4c:	8f e6       	ldi	r24, 0x6F	; 111
+   10a4e:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('o');
+   10a52:	8f e6       	ldi	r24, 0x6F	; 111
+   10a54:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('t');
+   10a58:	84 e7       	ldi	r24, 0x74	; 116
+   10a5a:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('+');
+   10a5e:	8b e2       	ldi	r24, 0x2B	; 43
+   10a60:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('+');
+   10a64:	8b e2       	ldi	r24, 0x2B	; 43
+   10a66:	54 c0       	rjmp	.+168    	; 0x10b10 <main+0x374>
+		}
+		// Read software version
+		else if (val == CMD_VERSION)
+   10a68:	86 35       	cpi	r24, 0x56	; 86
+   10a6a:	29 f4       	brne	.+10     	; 0x10a76 <main+0x2da>
+		{
+			send_char('0' + XBOOT_VERSION_MAJOR);
+   10a6c:	81 e3       	ldi	r24, 0x31	; 49
+   10a6e:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char('0' + XBOOT_VERSION_MINOR);
+   10a72:	87 e3       	ldi	r24, 0x37	; 55
+   10a74:	4d c0       	rjmp	.+154    	; 0x10b10 <main+0x374>
+		}
+		// Read signature bytes
+		else if (val == CMD_READ_SIGNATURE)
+   10a76:	83 37       	cpi	r24, 0x73	; 115
+   10a78:	41 f4       	brne	.+16     	; 0x10a8a <main+0x2ee>
+		{
+			send_char(SIGNATURE_2);
+   10a7a:	8a e4       	ldi	r24, 0x4A	; 74
+   10a7c:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char(SIGNATURE_1);
+   10a80:	86 e9       	ldi	r24, 0x96	; 150
+   10a82:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char(SIGNATURE_0);
+   10a86:	8e e1       	ldi	r24, 0x1E	; 30
+   10a88:	43 c0       	rjmp	.+134    	; 0x10b10 <main+0x374>
+		}
+		#ifdef ENABLE_CRC_SUPPORT
+		else if (val == CMD_CRC)
+   10a8a:	88 36       	cpi	r24, 0x68	; 104
+   10a8c:	f1 f5       	brne	.+124    	; 0x10b0a <main+0x36e>
+		{
+			uint32_t start = 0;
+			uint32_t length = 0;
+			uint16_t crc;
+			
+			val = get_char();
+   10a8e:	0e 94 d0 81 	call	0x103a0	; 0x103a0 <get_char>
+			
+			switch (val)
+   10a92:	86 34       	cpi	r24, 0x46	; 70
+   10a94:	31 f1       	breq	.+76     	; 0x10ae2 <main+0x346>
+   10a96:	28 f4       	brcc	.+10     	; 0x10aa2 <main+0x306>
+   10a98:	81 34       	cpi	r24, 0x41	; 65
+   10a9a:	41 f1       	breq	.+80     	; 0x10aec <main+0x350>
+   10a9c:	82 34       	cpi	r24, 0x42	; 66
+   10a9e:	e9 f4       	brne	.+58     	; 0x10ada <main+0x33e>
+   10aa0:	05 c0       	rjmp	.+10     	; 0x10aac <main+0x310>
+   10aa2:	81 36       	cpi	r24, 0x61	; 97
+   10aa4:	61 f0       	breq	.+24     	; 0x10abe <main+0x322>
+   10aa6:	84 37       	cpi	r24, 0x74	; 116
+   10aa8:	c1 f4       	brne	.+48     	; 0x10ada <main+0x33e>
+   10aaa:	0e c0       	rjmp	.+28     	; 0x10ac8 <main+0x32c>
+				case SECTION_APPLICATION:
+				length = APP_SECTION_SIZE;
+				break;
+				case SECTION_BOOT:
+				start = BOOT_SECTION_START;
+				length = BOOT_SECTION_SIZE;
+   10aac:	20 e0       	ldi	r18, 0x00	; 0
+   10aae:	30 e1       	ldi	r19, 0x10	; 16
+   10ab0:	40 e0       	ldi	r20, 0x00	; 0
+   10ab2:	50 e0       	ldi	r21, 0x00	; 0
+				break;
+				case SECTION_APPLICATION:
+				length = APP_SECTION_SIZE;
+				break;
+				case SECTION_BOOT:
+				start = BOOT_SECTION_START;
+   10ab4:	60 e0       	ldi	r22, 0x00	; 0
+   10ab6:	70 e0       	ldi	r23, 0x00	; 0
+   10ab8:	81 e0       	ldi	r24, 0x01	; 1
+   10aba:	90 e0       	ldi	r25, 0x00	; 0
+				length = BOOT_SECTION_SIZE;
+				break;
+   10abc:	1e c0       	rjmp	.+60     	; 0x10afa <main+0x35e>
+				#ifdef ENABLE_API
+				case SECTION_APP:
+				length = XB_APP_SIZE;
+   10abe:	20 e0       	ldi	r18, 0x00	; 0
+   10ac0:	30 e8       	ldi	r19, 0x80	; 128
+   10ac2:	40 e0       	ldi	r20, 0x00	; 0
+   10ac4:	50 e0       	ldi	r21, 0x00	; 0
+   10ac6:	16 c0       	rjmp	.+44     	; 0x10af4 <main+0x358>
+				break;
+				case SECTION_APP_TEMP:
+				start = XB_APP_TEMP_START;
+				length = XB_APP_TEMP_SIZE;
+   10ac8:	20 e0       	ldi	r18, 0x00	; 0
+   10aca:	30 e8       	ldi	r19, 0x80	; 128
+   10acc:	40 e0       	ldi	r20, 0x00	; 0
+   10ace:	50 e0       	ldi	r21, 0x00	; 0
+				#ifdef ENABLE_API
+				case SECTION_APP:
+				length = XB_APP_SIZE;
+				break;
+				case SECTION_APP_TEMP:
+				start = XB_APP_TEMP_START;
+   10ad0:	60 e0       	ldi	r22, 0x00	; 0
+   10ad2:	70 e8       	ldi	r23, 0x80	; 128
+   10ad4:	80 e0       	ldi	r24, 0x00	; 0
+   10ad6:	90 e0       	ldi	r25, 0x00	; 0
+				length = XB_APP_TEMP_SIZE;
+				break;
+   10ad8:	10 c0       	rjmp	.+32     	; 0x10afa <main+0x35e>
+				#endif // ENABLE_API
+				default:
+				send_char(REPLY_ERROR);
+   10ada:	8f e3       	ldi	r24, 0x3F	; 63
+   10adc:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+				continue;
+   10ae0:	b6 ce       	rjmp	.-660    	; 0x1084e <main+0xb2>
+			val = get_char();
+			
+			switch (val)
+			{
+				case SECTION_FLASH:
+				length = PROGMEM_SIZE;
+   10ae2:	20 e0       	ldi	r18, 0x00	; 0
+   10ae4:	30 e1       	ldi	r19, 0x10	; 16
+   10ae6:	41 e0       	ldi	r20, 0x01	; 1
+   10ae8:	50 e0       	ldi	r21, 0x00	; 0
+   10aea:	04 c0       	rjmp	.+8      	; 0x10af4 <main+0x358>
+				break;
+				case SECTION_APPLICATION:
+				length = APP_SECTION_SIZE;
+   10aec:	20 e0       	ldi	r18, 0x00	; 0
+   10aee:	30 e0       	ldi	r19, 0x00	; 0
+   10af0:	41 e0       	ldi	r20, 0x01	; 1
+   10af2:	50 e0       	ldi	r21, 0x00	; 0
+			send_char(SIGNATURE_0);
+		}
+		#ifdef ENABLE_CRC_SUPPORT
+		else if (val == CMD_CRC)
+		{
+			uint32_t start = 0;
+   10af4:	60 e0       	ldi	r22, 0x00	; 0
+   10af6:	70 e0       	ldi	r23, 0x00	; 0
+   10af8:	cb 01       	movw	r24, r22
+				default:
+				send_char(REPLY_ERROR);
+				continue;
+			}
+			
+			crc = crc16_block(start, length);
+   10afa:	0e 94 07 83 	call	0x1060e	; 0x1060e <crc16_block>
+   10afe:	c8 2e       	mov	r12, r24
+			
+			send_char((crc >> 8) & 0xff);
+   10b00:	89 2f       	mov	r24, r25
+   10b02:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+			send_char(crc & 0xff);
+   10b06:	8c 2d       	mov	r24, r12
+   10b08:	03 c0       	rjmp	.+6      	; 0x10b10 <main+0x374>
+		}
+		#endif // USE_I2C_ADDRESS_NEGOTIATION
+		#endif // USE_I2C
+		// ESC (0x1b) to sync
+		// otherwise, error
+		else if (val != CMD_SYNC)
+   10b0a:	8b 31       	cpi	r24, 0x1B	; 27
+   10b0c:	19 f0       	breq	.+6      	; 0x10b14 <main+0x378>
+		{
+			send_char(REPLY_ERROR);
+   10b0e:	8f e3       	ldi	r24, 0x3F	; 63
+   10b10:	0e 94 df 81 	call	0x103be	; 0x103be <send_char>
+		}
+		#endif // USE_I2C_ADDRESS_NEGOTIATION
+		#endif // USE_I2C
+		// ESC (0x1b) to sync
+		// otherwise, error
+		else if (val != CMD_SYNC)
+   10b14:	21 e0       	ldi	r18, 0x01	; 1
+		{
+			send_char(REPLY_ERROR);
+		}
+		
+		// Wait for any lingering SPM instructions to finish
+		Flash_WaitForSPM();
+   10b16:	2d 83       	std	Y+5, r18	; 0x05
+   10b18:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+   10b1c:	2d 81       	ldd	r18, Y+5	; 0x05
+	#ifdef USE_WATCHDOG
+	WDT_EnableAndSetTimeout();
+	#endif // USE_WATCHDOG
+	
+	// Main bootloader
+	while (in_bootloader) {
+   10b1e:	21 11       	cpse	r18, r1
+   10b20:	96 ce       	rjmp	.-724    	; 0x1084e <main+0xb2>
+	// --------------------------------------------------
+	
+	#ifdef ENABLE_API
+	#ifdef ENABLE_API_FIRMWARE_UPDATE
+	// Update firmware if needed
+	install_firmware();
+   10b22:	0e 94 4e 83 	call	0x1069c	; 0x1069c <install_firmware>
+	i2c_deinit();
+	#endif // USE_I2C
+	
+	#ifdef USE_UART
+	// Shut down UART
+	uart_deinit();
+   10b26:	0e 94 d2 86 	call	0x10da4	; 0x10da4 <uart_deinit>
+	
+	// Disable RX pin pull-up
+	#ifdef __AVR_XMEGA__
+	#ifdef UART_RX_PUEN
+	// Disable RX pin pullup
+	UART_RX_PIN_CTRL = 0;
+   10b2a:	10 92 52 06 	sts	0x0652, r1
+	
+	// LED
+	#ifdef __AVR_XMEGA__
+	#ifdef USE_LED
+	// Turn off LED on exit
+	LED_PORT.DIRCLR = (1 << LED_PIN);
+   10b2e:	82 e0       	ldi	r24, 0x02	; 2
+   10b30:	80 93 62 06 	sts	0x0662, r24
+	LED_PORT.OUTCLR = (1 << LED_PIN);
+   10b34:	80 93 66 06 	sts	0x0666, r24
+	
+	// --------------------------------------------------
+	// End bootloader exit section
+	
+	// Jump into main code
+	asm("jmp 0");
+   10b38:	0c 94 00 00 	jmp	0	; 0x0 <__heap_end>
+	#ifdef __builtin_unreachable
+	// Size optimization as the asm jmp will not return
+	// However, it seems it is not available on older versions of gcc
+	__builtin_unreachable();
+	#endif
+}
+   10b3c:	80 e0       	ldi	r24, 0x00	; 0
+   10b3e:	90 e0       	ldi	r25, 0x00	; 0
+   10b40:	25 96       	adiw	r28, 0x05	; 5
+   10b42:	cd bf       	out	0x3d, r28	; 61
+   10b44:	de bf       	out	0x3e, r29	; 62
+   10b46:	df 91       	pop	r29
+   10b48:	cf 91       	pop	r28
+   10b4a:	1f 91       	pop	r17
+   10b4c:	0f 91       	pop	r16
+   10b4e:	ff 90       	pop	r15
+   10b50:	ef 90       	pop	r14
+   10b52:	df 90       	pop	r13
+   10b54:	cf 90       	pop	r12
+   10b56:	08 95       	ret
+
+00010b58 <Flash_ProgramPage>:
+
+// XMega functions
+// (sp_driver wrapper)
+
+void Flash_ProgramPage(uint32_t page, uint8_t *buf, uint8_t erase)
+{
+   10b58:	cf 92       	push	r12
+   10b5a:	df 92       	push	r13
+   10b5c:	ef 92       	push	r14
+   10b5e:	ff 92       	push	r15
+   10b60:	cf 93       	push	r28
+   10b62:	df 93       	push	r29
+   10b64:	1f 92       	push	r1
+   10b66:	cd b7       	in	r28, 0x3d	; 61
+   10b68:	de b7       	in	r29, 0x3e	; 62
+   10b6a:	6b 01       	movw	r12, r22
+   10b6c:	7c 01       	movw	r14, r24
+   10b6e:	ca 01       	movw	r24, r20
+        Flash_LoadFlashPage(buf);
+   10b70:	29 83       	std	Y+1, r18	; 0x01
+   10b72:	0e 94 3e 81 	call	0x1027c	; 0x1027c <SP_LoadFlashPage>
+        
+        if (erase)
+   10b76:	29 81       	ldd	r18, Y+1	; 0x01
+        {
+                Flash_EraseWriteApplicationPage(page);
+   10b78:	c7 01       	movw	r24, r14
+   10b7a:	b6 01       	movw	r22, r12
+
+void Flash_ProgramPage(uint32_t page, uint8_t *buf, uint8_t erase)
+{
+        Flash_LoadFlashPage(buf);
+        
+        if (erase)
+   10b7c:	22 23       	and	r18, r18
+   10b7e:	19 f0       	breq	.+6      	; 0x10b86 <Flash_ProgramPage+0x2e>
+        {
+                Flash_EraseWriteApplicationPage(page);
+   10b80:	0e 94 68 81 	call	0x102d0	; 0x102d0 <SP_EraseWriteApplicationPage>
+   10b84:	02 c0       	rjmp	.+4      	; 0x10b8a <Flash_ProgramPage+0x32>
+        }
+        else
+        {
+                Flash_WriteApplicationPage(page);
+   10b86:	0e 94 62 81 	call	0x102c4	; 0x102c4 <SP_WriteApplicationPage>
+        }
+        
+        Flash_WaitForSPM();
+}
+   10b8a:	0f 90       	pop	r0
+   10b8c:	df 91       	pop	r29
+   10b8e:	cf 91       	pop	r28
+   10b90:	ff 90       	pop	r15
+   10b92:	ef 90       	pop	r14
+   10b94:	df 90       	pop	r13
+   10b96:	cf 90       	pop	r12
+        else
+        {
+                Flash_WriteApplicationPage(page);
+        }
+        
+        Flash_WaitForSPM();
+   10b98:	0c 94 8f 81 	jmp	0x1031e	; 0x1031e <SP_WaitForSPM>
+
+00010b9c <NVM_EXEC>:
+// NVM call
+static inline void NVM_EXEC(void)
+{
+        void *z = (void *)&NVM_CTRLA;
+        
+        __asm__ volatile("out %[ccp], %[ioreg]"  "\n\t"
+   10b9c:	eb ec       	ldi	r30, 0xCB	; 203
+   10b9e:	f1 e0       	ldi	r31, 0x01	; 1
+   10ba0:	21 e0       	ldi	r18, 0x01	; 1
+   10ba2:	30 e0       	ldi	r19, 0x00	; 0
+   10ba4:	88 ed       	ldi	r24, 0xD8	; 216
+   10ba6:	90 e0       	ldi	r25, 0x00	; 0
+   10ba8:	84 bf       	out	0x34, r24	; 52
+   10baa:	20 83       	st	Z, r18
+   10bac:	08 95       	ret
+
+00010bae <wait_for_nvm>:
+#endif // USE_AVR1008_EEPROM
+
+
+void wait_for_nvm(void)
+{
+        while (NVM.STATUS & NVM_NVMBUSY_bm) { };
+   10bae:	80 91 cf 01 	lds	r24, 0x01CF
+   10bb2:	87 fd       	sbrc	r24, 7
+   10bb4:	fc cf       	rjmp	.-8      	; 0x10bae <wait_for_nvm>
+}
+   10bb6:	08 95       	ret
+
+00010bb8 <flush_buffer>:
+
+void flush_buffer(void)
+{
+        wait_for_nvm();
+   10bb8:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+        
+        if ((NVM.STATUS & NVM_EELOAD_bm) != 0) {
+   10bbc:	80 91 cf 01 	lds	r24, 0x01CF
+   10bc0:	81 ff       	sbrs	r24, 1
+   10bc2:	05 c0       	rjmp	.+10     	; 0x10bce <flush_buffer+0x16>
+                NVM.CMD = NVM_CMD_ERASE_EEPROM_BUFFER_gc;
+   10bc4:	86 e3       	ldi	r24, 0x36	; 54
+   10bc6:	80 93 ca 01 	sts	0x01CA, r24
+                NVM_EXEC();
+   10bca:	0c 94 ce 85 	jmp	0x10b9c	; 0x10b9c <NVM_EXEC>
+   10bce:	08 95       	ret
+
+00010bd0 <EEPROM_read_byte>:
+        }
+}
+
+
+uint8_t EEPROM_read_byte(uint16_t addr)
+{
+   10bd0:	ef 92       	push	r14
+   10bd2:	ff 92       	push	r15
+   10bd4:	1f 93       	push	r17
+   10bd6:	cf 93       	push	r28
+   10bd8:	df 93       	push	r29
+   10bda:	1f 92       	push	r1
+   10bdc:	cd b7       	in	r28, 0x3d	; 61
+   10bde:	de b7       	in	r29, 0x3e	; 62
+   10be0:	19 2f       	mov	r17, r25
+        wait_for_nvm();
+   10be2:	89 83       	std	Y+1, r24	; 0x01
+   10be4:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+        
+        NVM.ADDR0 = addr & 0xFF;
+   10be8:	80 ec       	ldi	r24, 0xC0	; 192
+   10bea:	e8 2e       	mov	r14, r24
+   10bec:	ff 24       	eor	r15, r15
+   10bee:	f3 94       	inc	r15
+   10bf0:	89 81       	ldd	r24, Y+1	; 0x01
+   10bf2:	f7 01       	movw	r30, r14
+   10bf4:	80 83       	st	Z, r24
+        NVM.ADDR1 = (addr >> 8) & 0x1F;
+   10bf6:	81 2f       	mov	r24, r17
+   10bf8:	90 e0       	ldi	r25, 0x00	; 0
+   10bfa:	8f 71       	andi	r24, 0x1F	; 31
+   10bfc:	99 27       	eor	r25, r25
+   10bfe:	81 83       	std	Z+1, r24	; 0x01
+        NVM.ADDR2 = 0;
+   10c00:	12 82       	std	Z+2, r1	; 0x02
+        
+        NVM.CMD = NVM_CMD_READ_EEPROM_gc;
+   10c02:	86 e0       	ldi	r24, 0x06	; 6
+   10c04:	82 87       	std	Z+10, r24	; 0x0a
+        NVM_EXEC();
+   10c06:	0e 94 ce 85 	call	0x10b9c	; 0x10b9c <NVM_EXEC>
+        
+        return NVM.DATA0;
+   10c0a:	f7 01       	movw	r30, r14
+   10c0c:	84 81       	ldd	r24, Z+4	; 0x04
+}
+   10c0e:	0f 90       	pop	r0
+   10c10:	df 91       	pop	r29
+   10c12:	cf 91       	pop	r28
+   10c14:	1f 91       	pop	r17
+   10c16:	ff 90       	pop	r15
+   10c18:	ef 90       	pop	r14
+   10c1a:	08 95       	ret
+
+00010c1c <EEPROM_write_byte>:
+
+
+void EEPROM_write_byte(uint16_t addr, uint8_t byte)
+{
+   10c1c:	1f 93       	push	r17
+   10c1e:	cf 93       	push	r28
+   10c20:	df 93       	push	r29
+   10c22:	00 d0       	rcall	.+0      	; 0x10c24 <EEPROM_write_byte+0x8>
+   10c24:	cd b7       	in	r28, 0x3d	; 61
+   10c26:	de b7       	in	r29, 0x3e	; 62
+   10c28:	19 2f       	mov	r17, r25
+        flush_buffer();
+   10c2a:	69 83       	std	Y+1, r22	; 0x01
+   10c2c:	8a 83       	std	Y+2, r24	; 0x02
+   10c2e:	0e 94 dc 85 	call	0x10bb8	; 0x10bb8 <flush_buffer>
+        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+   10c32:	e0 ec       	ldi	r30, 0xC0	; 192
+   10c34:	f1 e0       	ldi	r31, 0x01	; 1
+   10c36:	93 e3       	ldi	r25, 0x33	; 51
+   10c38:	92 87       	std	Z+10, r25	; 0x0a
+        
+        NVM.ADDR0 = addr & 0xFF;
+   10c3a:	8a 81       	ldd	r24, Y+2	; 0x02
+   10c3c:	80 83       	st	Z, r24
+        NVM.ADDR1 = (addr >> 8) & 0x1F;
+   10c3e:	81 2f       	mov	r24, r17
+   10c40:	90 e0       	ldi	r25, 0x00	; 0
+   10c42:	8f 71       	andi	r24, 0x1F	; 31
+   10c44:	99 27       	eor	r25, r25
+   10c46:	81 83       	std	Z+1, r24	; 0x01
+        NVM.ADDR2 = 0;
+   10c48:	12 82       	std	Z+2, r1	; 0x02
+        
+        NVM.DATA0 = byte;
+   10c4a:	69 81       	ldd	r22, Y+1	; 0x01
+   10c4c:	64 83       	std	Z+4, r22	; 0x04
+        
+        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+   10c4e:	85 e3       	ldi	r24, 0x35	; 53
+   10c50:	82 87       	std	Z+10, r24	; 0x0a
+        NVM_EXEC_WRAPPER();
+}
+   10c52:	0f 90       	pop	r0
+   10c54:	0f 90       	pop	r0
+   10c56:	df 91       	pop	r29
+   10c58:	cf 91       	pop	r28
+   10c5a:	1f 91       	pop	r17
+        NVM.ADDR2 = 0;
+        
+        NVM.DATA0 = byte;
+        
+        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+        NVM_EXEC_WRAPPER();
+   10c5c:	0c 94 ce 85 	jmp	0x10b9c	; 0x10b9c <NVM_EXEC>
+
+00010c60 <EEPROM_read_block>:
+}
+
+
+uint16_t EEPROM_read_block(uint16_t addr, uint8_t *dest, uint16_t len)
+{
+   10c60:	bf 92       	push	r11
+   10c62:	cf 92       	push	r12
+   10c64:	df 92       	push	r13
+   10c66:	ef 92       	push	r14
+   10c68:	ff 92       	push	r15
+   10c6a:	0f 93       	push	r16
+   10c6c:	1f 93       	push	r17
+   10c6e:	cf 93       	push	r28
+   10c70:	df 93       	push	r29
+   10c72:	ec 01       	movw	r28, r24
+   10c74:	8b 01       	movw	r16, r22
+   10c76:	7a 01       	movw	r14, r20
+        uint16_t cnt = 0;
+        
+        NVM.ADDR2 = 0;
+   10c78:	10 92 c2 01 	sts	0x01C2, r1
+        
+        wait_for_nvm();
+   10c7c:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+        NVM_EXEC_WRAPPER();
+}
+
+
+uint16_t EEPROM_read_block(uint16_t addr, uint8_t *dest, uint16_t len)
+   10c80:	68 01       	movw	r12, r16
+   10c82:	ce 0c       	add	r12, r14
+   10c84:	df 1c       	adc	r13, r15
+        while (len > 0)
+        {
+                NVM.ADDR0 = addr & 0xFF;
+                NVM.ADDR1 = (addr >> 8) & 0x1F;
+                
+                NVM.CMD = NVM_CMD_READ_EEPROM_gc;
+   10c86:	26 e0       	ldi	r18, 0x06	; 6
+   10c88:	b2 2e       	mov	r11, r18
+        
+        NVM.ADDR2 = 0;
+        
+        wait_for_nvm();
+        
+        while (len > 0)
+   10c8a:	12 c0       	rjmp	.+36     	; 0x10cb0 <EEPROM_read_block+0x50>
+        {
+                NVM.ADDR0 = addr & 0xFF;
+   10c8c:	c0 93 c0 01 	sts	0x01C0, r28
+                NVM.ADDR1 = (addr >> 8) & 0x1F;
+   10c90:	8d 2f       	mov	r24, r29
+   10c92:	99 27       	eor	r25, r25
+   10c94:	8f 71       	andi	r24, 0x1F	; 31
+   10c96:	99 27       	eor	r25, r25
+   10c98:	80 93 c1 01 	sts	0x01C1, r24
+                
+                NVM.CMD = NVM_CMD_READ_EEPROM_gc;
+   10c9c:	b0 92 ca 01 	sts	0x01CA, r11
+                NVM_EXEC();
+   10ca0:	0e 94 ce 85 	call	0x10b9c	; 0x10b9c <NVM_EXEC>
+                
+                *(dest++) = NVM.DATA0; addr++;
+   10ca4:	80 91 c4 01 	lds	r24, 0x01C4
+   10ca8:	f8 01       	movw	r30, r16
+   10caa:	81 93       	st	Z+, r24
+   10cac:	8f 01       	movw	r16, r30
+   10cae:	21 96       	adiw	r28, 0x01	; 1
+        
+        NVM.ADDR2 = 0;
+        
+        wait_for_nvm();
+        
+        while (len > 0)
+   10cb0:	0c 15       	cp	r16, r12
+   10cb2:	1d 05       	cpc	r17, r13
+   10cb4:	59 f7       	brne	.-42     	; 0x10c8c <EEPROM_read_block+0x2c>
+                *(dest++) = NVM.DATA0; addr++;
+                
+                len--; cnt++;
+        }
+        return cnt;
+}
+   10cb6:	c7 01       	movw	r24, r14
+   10cb8:	df 91       	pop	r29
+   10cba:	cf 91       	pop	r28
+   10cbc:	1f 91       	pop	r17
+   10cbe:	0f 91       	pop	r16
+   10cc0:	ff 90       	pop	r15
+   10cc2:	ef 90       	pop	r14
+   10cc4:	df 90       	pop	r13
+   10cc6:	cf 90       	pop	r12
+   10cc8:	bf 90       	pop	r11
+   10cca:	08 95       	ret
+
+00010ccc <EEPROM_write_block>:
+
+
+uint16_t EEPROM_write_block(uint16_t addr, const uint8_t *src, uint16_t len)
+{
+   10ccc:	9f 92       	push	r9
+   10cce:	af 92       	push	r10
+   10cd0:	bf 92       	push	r11
+   10cd2:	cf 92       	push	r12
+   10cd4:	df 92       	push	r13
+   10cd6:	ef 92       	push	r14
+   10cd8:	ff 92       	push	r15
+   10cda:	0f 93       	push	r16
+   10cdc:	1f 93       	push	r17
+   10cde:	cf 93       	push	r28
+   10ce0:	df 93       	push	r29
+   10ce2:	7b 01       	movw	r14, r22
+   10ce4:	b4 2e       	mov	r11, r20
+   10ce6:	c5 2e       	mov	r12, r21
+        uint8_t byte_addr = addr % EEPROM_PAGE_SIZE;
+   10ce8:	9c 01       	movw	r18, r24
+   10cea:	2f 71       	andi	r18, 0x1F	; 31
+   10cec:	33 27       	eor	r19, r19
+   10cee:	d2 2e       	mov	r13, r18
+        uint16_t page_addr = addr - byte_addr;
+   10cf0:	8c 01       	movw	r16, r24
+   10cf2:	02 1b       	sub	r16, r18
+   10cf4:	13 0b       	sbc	r17, r19
+        uint16_t cnt = 0;
+        
+        flush_buffer();
+   10cf6:	0e 94 dc 85 	call	0x10bb8	; 0x10bb8 <flush_buffer>
+        wait_for_nvm();
+   10cfa:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+   10cfe:	83 e3       	ldi	r24, 0x33	; 51
+   10d00:	80 93 ca 01 	sts	0x01CA, r24
+        
+        NVM.ADDR1 = 0;
+   10d04:	10 92 c1 01 	sts	0x01C1, r1
+        NVM.ADDR2 = 0;
+   10d08:	10 92 c2 01 	sts	0x01C2, r1
+        
+        while (len > 0)
+   10d0c:	cb 2d       	mov	r28, r11
+   10d0e:	dc 2d       	mov	r29, r12
+                if (len == 0 || byte_addr >= EEPROM_PAGE_SIZE)
+                {
+                        NVM.ADDR0 = page_addr & 0xFF;
+                        NVM.ADDR1 = (page_addr >> 8) & 0x1F;
+                        
+                        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+   10d10:	45 e3       	ldi	r20, 0x35	; 53
+   10d12:	a4 2e       	mov	r10, r20
+                        page_addr += EEPROM_PAGE_SIZE;
+                        byte_addr = 0;
+                        
+                        wait_for_nvm();
+                        
+                        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+   10d14:	53 e3       	ldi	r21, 0x33	; 51
+   10d16:	95 2e       	mov	r9, r21
+        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+        
+        NVM.ADDR1 = 0;
+        NVM.ADDR2 = 0;
+        
+        while (len > 0)
+   10d18:	20 c0       	rjmp	.+64     	; 0x10d5a <EEPROM_write_block+0x8e>
+        {
+                NVM.ADDR0 = byte_addr;
+   10d1a:	d0 92 c0 01 	sts	0x01C0, r13
+                
+                NVM.DATA0 = *(src++);
+   10d1e:	f7 01       	movw	r30, r14
+   10d20:	81 91       	ld	r24, Z+
+   10d22:	7f 01       	movw	r14, r30
+   10d24:	80 93 c4 01 	sts	0x01C4, r24
+                
+                byte_addr++;
+                len--;
+   10d28:	21 97       	sbiw	r28, 0x01	; 1
+                
+                if (len == 0 || byte_addr >= EEPROM_PAGE_SIZE)
+   10d2a:	21 f0       	breq	.+8      	; 0x10d34 <EEPROM_write_block+0x68>
+        {
+                NVM.ADDR0 = byte_addr;
+                
+                NVM.DATA0 = *(src++);
+                
+                byte_addr++;
+   10d2c:	d3 94       	inc	r13
+                len--;
+                
+                if (len == 0 || byte_addr >= EEPROM_PAGE_SIZE)
+   10d2e:	f0 e2       	ldi	r31, 0x20	; 32
+   10d30:	df 12       	cpse	r13, r31
+   10d32:	13 c0       	rjmp	.+38     	; 0x10d5a <EEPROM_write_block+0x8e>
+                {
+                        NVM.ADDR0 = page_addr & 0xFF;
+   10d34:	00 93 c0 01 	sts	0x01C0, r16
+                        NVM.ADDR1 = (page_addr >> 8) & 0x1F;
+   10d38:	21 2f       	mov	r18, r17
+   10d3a:	33 27       	eor	r19, r19
+   10d3c:	2f 71       	andi	r18, 0x1F	; 31
+   10d3e:	33 27       	eor	r19, r19
+   10d40:	20 93 c1 01 	sts	0x01C1, r18
+                        
+                        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+   10d44:	a0 92 ca 01 	sts	0x01CA, r10
+                        NVM_EXEC();
+   10d48:	0e 94 ce 85 	call	0x10b9c	; 0x10b9c <NVM_EXEC>
+                        
+                        page_addr += EEPROM_PAGE_SIZE;
+   10d4c:	00 5e       	subi	r16, 0xE0	; 224
+   10d4e:	1f 4f       	sbci	r17, 0xFF	; 255
+                        byte_addr = 0;
+                        
+                        wait_for_nvm();
+   10d50:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+                        
+                        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+   10d54:	90 92 ca 01 	sts	0x01CA, r9
+                        
+                        NVM.CMD = NVM_CMD_ERASE_WRITE_EEPROM_PAGE_gc;
+                        NVM_EXEC();
+                        
+                        page_addr += EEPROM_PAGE_SIZE;
+                        byte_addr = 0;
+   10d58:	d1 2c       	mov	r13, r1
+        NVM.CMD = NVM_CMD_LOAD_EEPROM_BUFFER_gc;
+        
+        NVM.ADDR1 = 0;
+        NVM.ADDR2 = 0;
+        
+        while (len > 0)
+   10d5a:	20 97       	sbiw	r28, 0x00	; 0
+   10d5c:	f1 f6       	brne	.-68     	; 0x10d1a <EEPROM_write_block+0x4e>
+                
+                cnt++;
+        }
+        
+        return cnt;
+}
+   10d5e:	8b 2d       	mov	r24, r11
+   10d60:	9c 2d       	mov	r25, r12
+   10d62:	df 91       	pop	r29
+   10d64:	cf 91       	pop	r28
+   10d66:	1f 91       	pop	r17
+   10d68:	0f 91       	pop	r16
+   10d6a:	ff 90       	pop	r15
+   10d6c:	ef 90       	pop	r14
+   10d6e:	df 90       	pop	r13
+   10d70:	cf 90       	pop	r12
+   10d72:	bf 90       	pop	r11
+   10d74:	af 90       	pop	r10
+   10d76:	9f 90       	pop	r9
+   10d78:	08 95       	ret
+
+00010d7a <EEPROM_erase_all>:
+}
+
+
+void EEPROM_erase_all(void)
+{
+        wait_for_nvm();
+   10d7a:	0e 94 d7 85 	call	0x10bae	; 0x10bae <wait_for_nvm>
+        
+        NVM.CMD = NVM_CMD_ERASE_EEPROM_gc;
+   10d7e:	80 e3       	ldi	r24, 0x30	; 48
+   10d80:	e0 ec       	ldi	r30, 0xC0	; 192
+   10d82:	f1 e0       	ldi	r31, 0x01	; 1
+   10d84:	82 87       	std	Z+10, r24	; 0x0a
+        NVM_EXEC_WRAPPER();
+   10d86:	0c 94 ce 85 	jmp	0x10b9c	; 0x10b9c <NVM_EXEC>
+
+00010d8a <uart_init>:
+
+// Initialize UART
+void uart_init(void)
+{
+#ifdef __AVR_XMEGA__
+        UART_PORT.DIRSET = (1 << UART_TX_PIN);
+   10d8a:	88 e0       	ldi	r24, 0x08	; 8
+   10d8c:	e0 e4       	ldi	r30, 0x40	; 64
+   10d8e:	f6 e0       	ldi	r31, 0x06	; 6
+   10d90:	81 83       	std	Z+1, r24	; 0x01
+        UART_DEVICE.BAUDCTRLA = (UART_BSEL_VALUE & USART_BSEL_gm);
+   10d92:	e0 ea       	ldi	r30, 0xA0	; 160
+   10d94:	f8 e0       	ldi	r31, 0x08	; 8
+   10d96:	8a e1       	ldi	r24, 0x1A	; 26
+   10d98:	86 83       	std	Z+6, r24	; 0x06
+        UART_DEVICE.BAUDCTRLB = ((UART_BSCALE_VALUE << USART_BSCALE_gp) & USART_BSCALE_gm) | ((UART_BSEL_VALUE >> 8) & ~USART_BSCALE_gm);
+   10d9a:	80 ed       	ldi	r24, 0xD0	; 208
+   10d9c:	87 83       	std	Z+7, r24	; 0x07
+        #if UART_CLK2X
+        UART_DEVICE.CTRLB = USART_RXEN_bm | USART_CLK2X_bm | USART_TXEN_bm;
+   10d9e:	8c e1       	ldi	r24, 0x1C	; 28
+   10da0:	84 83       	std	Z+4, r24	; 0x04
+   10da2:	08 95       	ret
+
+00010da4 <uart_deinit>:
+
+// Shut down UART
+void uart_deinit(void)
+{
+#ifdef __AVR_XMEGA__
+        UART_DEVICE.CTRLB = 0;
+   10da4:	e0 ea       	ldi	r30, 0xA0	; 160
+   10da6:	f8 e0       	ldi	r31, 0x08	; 8
+   10da8:	14 82       	std	Z+4, r1	; 0x04
+        #ifdef USE_INTERRUPTS
+        UART_DEVICE.CTRLA = 0;
+        #endif // USE_INTERRUPTS
+        UART_DEVICE.BAUDCTRLA = 0;
+   10daa:	16 82       	std	Z+6, r1	; 0x06
+        UART_DEVICE.BAUDCTRLB = 0;
+   10dac:	17 82       	std	Z+7, r1	; 0x07
+        UART_PORT.DIRCLR = (1 << UART_TX_PIN);
+   10dae:	88 e0       	ldi	r24, 0x08	; 8
+   10db0:	e0 e4       	ldi	r30, 0x40	; 64
+   10db2:	f6 e0       	ldi	r31, 0x06	; 6
+   10db4:	82 83       	std	Z+2, r24	; 0x02
+   10db6:	08 95       	ret
+
+00010db8 <WDT_EnableAndSetTimeout>:
+#ifdef __AVR_XMEGA__
+
+void WDT_EnableAndSetTimeout( void )
+{
+        uint8_t temp = WDT_ENABLE_bm | WDT_CEN_bm | WATCHDOG_TIMEOUT;
+        CCP = CCP_IOREG_gc;
+   10db8:	88 ed       	ldi	r24, 0xD8	; 216
+   10dba:	84 bf       	out	0x34, r24	; 52
+        WDT.CTRL = temp;
+   10dbc:	8f e1       	ldi	r24, 0x1F	; 31
+   10dbe:	80 93 80 00 	sts	0x0080, r24
+        
+        /* Wait for WD to synchronize with new settings. */
+        while(WDT_IsSyncBusy());
+   10dc2:	80 91 82 00 	lds	r24, 0x0082
+   10dc6:	80 fd       	sbrc	r24, 0
+   10dc8:	fc cf       	rjmp	.-8      	; 0x10dc2 <WDT_EnableAndSetTimeout+0xa>
+}
+   10dca:	08 95       	ret
+
+00010dcc <xboot_get_version>:
+#endif // ENABLE_API
+
+// General Functions
+uint8_t xboot_get_version(uint16_t *ver)
+{
+        *ver = (XBOOT_VERSION_MAJOR << 8) | (XBOOT_VERSION_MINOR);
+   10dcc:	27 e0       	ldi	r18, 0x07	; 7
+   10dce:	31 e0       	ldi	r19, 0x01	; 1
+   10dd0:	fc 01       	movw	r30, r24
+   10dd2:	20 83       	st	Z, r18
+   10dd4:	31 83       	std	Z+1, r19	; 0x01
+        return XB_SUCCESS;
+}
+   10dd6:	80 e0       	ldi	r24, 0x00	; 0
+   10dd8:	08 95       	ret
+
+00010dda <xboot_spm_wrapper>:
+
+// Low level flash access
+uint8_t xboot_spm_wrapper(void)
+{
+        return XB_ERR_NOT_FOUND;
+}
+   10dda:	82 e0       	ldi	r24, 0x02	; 2
+   10ddc:	08 95       	ret
+
+00010dde <xboot_app_temp_erase>:
+}
+#endif // __AVR_XMEGA__
+
+// Higher level firmware update functions
+uint8_t xboot_app_temp_erase(void)
+{
+   10dde:	cf 92       	push	r12
+   10de0:	df 92       	push	r13
+   10de2:	ef 92       	push	r14
+   10de4:	ff 92       	push	r15
+   10de6:	cf 93       	push	r28
+        uint8_t saved_status = SREG;
+   10de8:	cf b7       	in	r28, 0x3f	; 63
+        cli();
+   10dea:	f8 94       	cli
+        
+        for (uint32_t addr = XB_APP_TEMP_START; addr < XB_APP_TEMP_END; addr += SPM_PAGESIZE)
+   10dec:	c1 2c       	mov	r12, r1
+   10dee:	80 e8       	ldi	r24, 0x80	; 128
+   10df0:	d8 2e       	mov	r13, r24
+   10df2:	e1 2c       	mov	r14, r1
+   10df4:	f1 2c       	mov	r15, r1
+        {
+                Flash_EraseApplicationPage(addr);
+   10df6:	c7 01       	movw	r24, r14
+   10df8:	b6 01       	movw	r22, r12
+   10dfa:	0e 94 33 81 	call	0x10266	; 0x10266 <SP_EraseApplicationPage>
+                Flash_WaitForSPM();
+   10dfe:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+uint8_t xboot_app_temp_erase(void)
+{
+        uint8_t saved_status = SREG;
+        cli();
+        
+        for (uint32_t addr = XB_APP_TEMP_START; addr < XB_APP_TEMP_END; addr += SPM_PAGESIZE)
+   10e02:	8f ef       	ldi	r24, 0xFF	; 255
+   10e04:	d8 1a       	sub	r13, r24
+   10e06:	e8 0a       	sbc	r14, r24
+   10e08:	f8 0a       	sbc	r15, r24
+   10e0a:	c1 14       	cp	r12, r1
+   10e0c:	d1 04       	cpc	r13, r1
+   10e0e:	81 e0       	ldi	r24, 0x01	; 1
+   10e10:	e8 06       	cpc	r14, r24
+   10e12:	f1 04       	cpc	r15, r1
+   10e14:	81 f7       	brne	.-32     	; 0x10df6 <xboot_app_temp_erase+0x18>
+#ifndef __AVR_XMEGA__
+        boot_rww_enable();
+#endif // __AVR_XMEGA__
+        
+#ifdef __AVR_XMEGA__
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+   10e16:	10 92 ca 01 	sts	0x01CA, r1
+#endif // __AVR_XMEGA__
+        
+        SREG = saved_status;
+   10e1a:	cf bf       	out	0x3f, r28	; 63
+        return XB_SUCCESS;
+}
+   10e1c:	80 e0       	ldi	r24, 0x00	; 0
+   10e1e:	cf 91       	pop	r28
+   10e20:	ff 90       	pop	r15
+   10e22:	ef 90       	pop	r14
+   10e24:	df 90       	pop	r13
+   10e26:	cf 90       	pop	r12
+   10e28:	08 95       	ret
+
+00010e2a <xboot_erase_application_page>:
+{
+        return XB_ERR_NOT_FOUND;
+}
+
+uint8_t xboot_erase_application_page(uint32_t address)
+{
+   10e2a:	cf 93       	push	r28
+        uint8_t saved_status = SREG;
+   10e2c:	cf b7       	in	r28, 0x3f	; 63
+        
+        if (address > BOOT_SECTION_START)
+   10e2e:	61 30       	cpi	r22, 0x01	; 1
+   10e30:	71 05       	cpc	r23, r1
+   10e32:	21 e0       	ldi	r18, 0x01	; 1
+   10e34:	82 07       	cpc	r24, r18
+   10e36:	91 05       	cpc	r25, r1
+   10e38:	50 f4       	brcc	.+20     	; 0x10e4e <xboot_erase_application_page+0x24>
+                return XB_INVALID_ADDRESS;
+        
+        cli();
+   10e3a:	f8 94       	cli
+        
+        Flash_EraseApplicationPage(address);
+   10e3c:	0e 94 33 81 	call	0x10266	; 0x10266 <SP_EraseApplicationPage>
+        Flash_WaitForSPM();
+   10e40:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+#ifndef __AVR_XMEGA__
+        boot_rww_enable();
+#endif // __AVR_XMEGA__
+        
+#ifdef __AVR_XMEGA__
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+   10e44:	10 92 ca 01 	sts	0x01CA, r1
+#endif // __AVR_XMEGA__
+        
+        SREG = saved_status;
+   10e48:	cf bf       	out	0x3f, r28	; 63
+        return XB_SUCCESS;
+   10e4a:	80 e0       	ldi	r24, 0x00	; 0
+   10e4c:	01 c0       	rjmp	.+2      	; 0x10e50 <xboot_erase_application_page+0x26>
+uint8_t xboot_erase_application_page(uint32_t address)
+{
+        uint8_t saved_status = SREG;
+        
+        if (address > BOOT_SECTION_START)
+                return XB_INVALID_ADDRESS;
+   10e4e:	83 e0       	ldi	r24, 0x03	; 3
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+#endif // __AVR_XMEGA__
+        
+        SREG = saved_status;
+        return XB_SUCCESS;
+}
+   10e50:	cf 91       	pop	r28
+   10e52:	08 95       	ret
+
+00010e54 <xboot_write_user_signature_row>:
+        return XB_SUCCESS;
+}
+
+#ifdef __AVR_XMEGA__
+uint8_t xboot_write_user_signature_row(uint8_t *data)
+{
+   10e54:	cf 93       	push	r28
+        uint8_t saved_status = SREG;
+   10e56:	cf b7       	in	r28, 0x3f	; 63
+        cli();
+   10e58:	f8 94       	cli
+        
+        Flash_LoadFlashPage(data);
+   10e5a:	0e 94 3e 81 	call	0x1027c	; 0x1027c <SP_LoadFlashPage>
+        Flash_EraseUserSignatureRow();
+   10e5e:	0e 94 24 81 	call	0x10248	; 0x10248 <SP_EraseUserSignatureRow>
+        Flash_WaitForSPM();
+   10e62:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+        Flash_WriteUserSignatureRow();
+   10e66:	0e 94 28 81 	call	0x10250	; 0x10250 <SP_WriteUserSignatureRow>
+        Flash_WaitForSPM();
+   10e6a:	0e 94 8f 81 	call	0x1031e	; 0x1031e <SP_WaitForSPM>
+        
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+   10e6e:	10 92 ca 01 	sts	0x01CA, r1
+        
+        SREG = saved_status;
+   10e72:	cf bf       	out	0x3f, r28	; 63
+        return XB_SUCCESS;
+}
+   10e74:	80 e0       	ldi	r24, 0x00	; 0
+   10e76:	cf 91       	pop	r28
+   10e78:	08 95       	ret
+
+00010e7a <xboot_write_application_page>:
+        SREG = saved_status;
+        return XB_SUCCESS;
+}
+
+uint8_t xboot_write_application_page(uint32_t address, uint8_t *data, uint8_t erase)
+{
+   10e7a:	cf 93       	push	r28
+        uint8_t saved_status = SREG;
+   10e7c:	cf b7       	in	r28, 0x3f	; 63
+        
+        if (address > BOOT_SECTION_START)
+   10e7e:	61 30       	cpi	r22, 0x01	; 1
+   10e80:	71 05       	cpc	r23, r1
+   10e82:	31 e0       	ldi	r19, 0x01	; 1
+   10e84:	83 07       	cpc	r24, r19
+   10e86:	91 05       	cpc	r25, r1
+   10e88:	40 f4       	brcc	.+16     	; 0x10e9a <xboot_write_application_page+0x20>
+                return XB_INVALID_ADDRESS;
+        
+        cli();
+   10e8a:	f8 94       	cli
+        
+        Flash_ProgramPage(address, data, erase);
+   10e8c:	0e 94 ac 85 	call	0x10b58	; 0x10b58 <Flash_ProgramPage>
+        
+#ifdef __AVR_XMEGA__
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+   10e90:	10 92 ca 01 	sts	0x01CA, r1
+#endif // __AVR_XMEGA__
+        
+        SREG = saved_status;
+   10e94:	cf bf       	out	0x3f, r28	; 63
+        return XB_SUCCESS;
+   10e96:	80 e0       	ldi	r24, 0x00	; 0
+   10e98:	01 c0       	rjmp	.+2      	; 0x10e9c <xboot_write_application_page+0x22>
+uint8_t xboot_write_application_page(uint32_t address, uint8_t *data, uint8_t erase)
+{
+        uint8_t saved_status = SREG;
+        
+        if (address > BOOT_SECTION_START)
+                return XB_INVALID_ADDRESS;
+   10e9a:	83 e0       	ldi	r24, 0x03	; 3
+        NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+#endif // __AVR_XMEGA__
+        
+        SREG = saved_status;
+        return XB_SUCCESS;
+}
+   10e9c:	cf 91       	pop	r28
+   10e9e:	08 95       	ret
+
+00010ea0 <xboot_app_temp_write_page>:
+        return XB_SUCCESS;
+}
+
+uint8_t xboot_app_temp_write_page(uint32_t addr, uint8_t *data, uint8_t erase)
+{
+        return xboot_write_application_page(addr + XB_APP_TEMP_START, data, erase);
+   10ea0:	70 58       	subi	r23, 0x80	; 128
+   10ea2:	8f 4f       	sbci	r24, 0xFF	; 255
+   10ea4:	9f 4f       	sbci	r25, 0xFF	; 255
+   10ea6:	0c 94 3d 87 	jmp	0x10e7a	; 0x10e7a <xboot_write_application_page>
+
+00010eaa <_exit>:
+   10eaa:	f8 94       	cli
+
+00010eac <__stop_program>:
+   10eac:	ff cf       	rjmp	.-2      	; 0x10eac <__stop_program>

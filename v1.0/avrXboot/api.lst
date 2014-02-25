@@ -1,0 +1,505 @@
+   1               		.file	"api.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__CCP__ = 0x34
+   7               	__tmp_reg__ = 0
+   8               	__zero_reg__ = 1
+  10               		.text
+  11               	.Ltext0:
+ 369               		.section	.text.xboot_get_version,"ax",@progbits
+ 372               	.global	xboot_get_version
+ 374               	xboot_get_version:
+   1:api.c         **** /************************************************************************/
+   2:api.c         **** /* XBoot Extensible AVR Bootloader API                                  */
+   3:api.c         **** /*                                                                      */
+   4:api.c         **** /* api.c                                                                */
+   5:api.c         **** /*                                                                      */
+   6:api.c         **** /* Alex Forencich <alex@alexforencich.com>                              */
+   7:api.c         **** /*                                                                      */
+   8:api.c         **** /* Copyright (c) 2010 Alex Forencich                                    */
+   9:api.c         **** /*                                                                      */
+  10:api.c         **** /* Permission is hereby granted, free of charge, to any person          */
+  11:api.c         **** /* obtaining a copy of this software and associated documentation       */
+  12:api.c         **** /* files(the "Software"), to deal in the Software without restriction,  */
+  13:api.c         **** /* including without limitation the rights to use, copy, modify, merge, */
+  14:api.c         **** /* publish, distribute, sublicense, and/or sell copies of the Software, */
+  15:api.c         **** /* and to permit persons to whom the Software is furnished to do so,    */
+  16:api.c         **** /* subject to the following conditions:                                 */
+  17:api.c         **** /*                                                                      */
+  18:api.c         **** /* The above copyright notice and this permission notice shall be       */
+  19:api.c         **** /* included in all copies or substantial portions of the Software.      */
+  20:api.c         **** /*                                                                      */
+  21:api.c         **** /* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,      */
+  22:api.c         **** /* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF   */
+  23:api.c         **** /* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND                */
+  24:api.c         **** /* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS  */
+  25:api.c         **** /* BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN   */
+  26:api.c         **** /* ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN    */
+  27:api.c         **** /* CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE     */
+  28:api.c         **** /* SOFTWARE.                                                            */
+  29:api.c         **** /*                                                                      */
+  30:api.c         **** /************************************************************************/
+  31:api.c         **** 
+  32:api.c         **** #include "api.h"
+  33:api.c         **** 
+  34:api.c         **** // jump table
+  35:api.c         **** 
+  36:api.c         **** #ifdef ENABLE_API
+  37:api.c         **** 
+  38:api.c         **** #if USE_API_VERSION == 1
+  39:api.c         **** 
+  40:api.c         **** // Version 1
+  41:api.c         **** // XBj\x1
+  42:api.c         **** struct xboot_jump_table_s api_jump_table __attribute((section(".vectors"))) = {
+  43:api.c         ****         {'X', 'B', 'j'}, 1,
+  44:api.c         ****         {
+  45:api.c         ****                 // General Functions
+  46:api.c         ****                 (uint16_t)(xboot_get_version),
+  47:api.c         ****                 
+  48:api.c         ****                 // Low level flash access
+  49:api.c         ****                 #ifdef ENABLE_API_LOW_LEVEL_FLASH
+  50:api.c         ****                 #ifdef ENABLE_API_SPM_WRAPPER
+  51:api.c         ****                 (uint16_t)(xboot_spm_wrapper),
+  52:api.c         ****                 #else // ENABLE_API_SPM_WRAPPER
+  53:api.c         ****                 0,
+  54:api.c         ****                 #endif // ENABLE_API_SPM_WRAPPER
+  55:api.c         ****                 (uint16_t)(xboot_erase_application_page),
+  56:api.c         ****                 (uint16_t)(xboot_write_application_page),
+  57:api.c         **** #ifdef __AVR_XMEGA__
+  58:api.c         ****                 (uint16_t)(xboot_write_user_signature_row),
+  59:api.c         **** #else // __AVR_XMEGA__
+  60:api.c         ****                 0,
+  61:api.c         **** #endif // __AVR_XMEGA__
+  62:api.c         ****                 #else // ENABLE_API_LOW_LEVEL_FLASH
+  63:api.c         ****                 0,
+  64:api.c         ****                 0,
+  65:api.c         ****                 0,
+  66:api.c         ****                 0,
+  67:api.c         ****                 #endif // ENABLE_API_LOW_LEVEL_FLASH
+  68:api.c         ****                 
+  69:api.c         ****                 // Higher level firmware update functions
+  70:api.c         ****                 #ifdef ENABLE_API_FIRMWARE_UPDATE
+  71:api.c         ****                 (uint16_t)(xboot_app_temp_erase),
+  72:api.c         ****                 (uint16_t)(xboot_app_temp_write_page),
+  73:api.c         ****                 #else // ENABLE_API_FIRMWARE_UPDATE
+  74:api.c         ****                 0,
+  75:api.c         ****                 0,
+  76:api.c         ****                 #endif // ENABLE_API_FIRMWARE_UPDATE
+  77:api.c         ****         }
+  78:api.c         **** };
+  79:api.c         **** 
+  80:api.c         **** #endif // USE_API_VERSION
+  81:api.c         **** 
+  82:api.c         **** #endif // ENABLE_API
+  83:api.c         **** 
+  84:api.c         **** // General Functions
+  85:api.c         **** uint8_t xboot_get_version(uint16_t *ver)
+  86:api.c         **** {
+ 376               	.LM0:
+ 377               	.LFBB1:
+ 378               	/* prologue: function */
+ 379               	/* frame size = 0 */
+ 380               	/* stack size = 0 */
+ 381               	.L__stack_usage = 0
+  87:api.c         ****         *ver = (XBOOT_VERSION_MAJOR << 8) | (XBOOT_VERSION_MINOR);
+ 383               	.LM1:
+ 384 0000 27E0      		ldi r18,lo8(7)
+ 385 0002 31E0      		ldi r19,lo8(1)
+ 386 0004 FC01      		movw r30,r24
+ 387 0006 2083      		st Z,r18
+ 388 0008 3183      		std Z+1,r19
+  88:api.c         ****         return XB_SUCCESS;
+  89:api.c         **** }
+ 390               	.LM2:
+ 391 000a 80E0      		ldi r24,0
+ 392 000c 0895      		ret
+ 394               	.Lscope1:
+ 395               		.section	.text.xboot_spm_wrapper,"ax",@progbits
+ 397               	.global	xboot_spm_wrapper
+ 399               	xboot_spm_wrapper:
+  90:api.c         **** 
+  91:api.c         **** // Low level flash access
+  92:api.c         **** uint8_t xboot_spm_wrapper(void)
+  93:api.c         **** {
+ 401               	.LM3:
+ 402               	.LFBB2:
+ 403               	/* prologue: function */
+ 404               	/* frame size = 0 */
+ 405               	/* stack size = 0 */
+ 406               	.L__stack_usage = 0
+  94:api.c         ****         return XB_ERR_NOT_FOUND;
+  95:api.c         **** }
+ 408               	.LM4:
+ 409 0000 82E0      		ldi r24,lo8(2)
+ 410 0002 0895      		ret
+ 412               	.Lscope2:
+ 413               		.section	.text.xboot_app_temp_erase,"ax",@progbits
+ 415               	.global	xboot_app_temp_erase
+ 417               	xboot_app_temp_erase:
+  96:api.c         **** 
+  97:api.c         **** uint8_t xboot_erase_application_page(uint32_t address)
+  98:api.c         **** {
+  99:api.c         ****         uint8_t saved_status = SREG;
+ 100:api.c         ****         
+ 101:api.c         ****         if (address > BOOT_SECTION_START)
+ 102:api.c         ****                 return XB_INVALID_ADDRESS;
+ 103:api.c         ****         
+ 104:api.c         ****         cli();
+ 105:api.c         ****         
+ 106:api.c         ****         Flash_EraseApplicationPage(address);
+ 107:api.c         ****         Flash_WaitForSPM();
+ 108:api.c         ****         
+ 109:api.c         **** #ifndef __AVR_XMEGA__
+ 110:api.c         ****         boot_rww_enable();
+ 111:api.c         **** #endif // __AVR_XMEGA__
+ 112:api.c         ****         
+ 113:api.c         **** #ifdef __AVR_XMEGA__
+ 114:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 115:api.c         **** #endif // __AVR_XMEGA__
+ 116:api.c         ****         
+ 117:api.c         ****         SREG = saved_status;
+ 118:api.c         ****         return XB_SUCCESS;
+ 119:api.c         **** }
+ 120:api.c         **** 
+ 121:api.c         **** uint8_t xboot_write_application_page(uint32_t address, uint8_t *data, uint8_t erase)
+ 122:api.c         **** {
+ 123:api.c         ****         uint8_t saved_status = SREG;
+ 124:api.c         ****         
+ 125:api.c         ****         if (address > BOOT_SECTION_START)
+ 126:api.c         ****                 return XB_INVALID_ADDRESS;
+ 127:api.c         ****         
+ 128:api.c         ****         cli();
+ 129:api.c         ****         
+ 130:api.c         ****         Flash_ProgramPage(address, data, erase);
+ 131:api.c         ****         
+ 132:api.c         **** #ifdef __AVR_XMEGA__
+ 133:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 134:api.c         **** #endif // __AVR_XMEGA__
+ 135:api.c         ****         
+ 136:api.c         ****         SREG = saved_status;
+ 137:api.c         ****         return XB_SUCCESS;
+ 138:api.c         **** }
+ 139:api.c         **** 
+ 140:api.c         **** #ifdef __AVR_XMEGA__
+ 141:api.c         **** uint8_t xboot_write_user_signature_row(uint8_t *data)
+ 142:api.c         **** {
+ 143:api.c         ****         uint8_t saved_status = SREG;
+ 144:api.c         ****         cli();
+ 145:api.c         ****         
+ 146:api.c         ****         Flash_LoadFlashPage(data);
+ 147:api.c         ****         Flash_EraseUserSignatureRow();
+ 148:api.c         ****         Flash_WaitForSPM();
+ 149:api.c         ****         Flash_WriteUserSignatureRow();
+ 150:api.c         ****         Flash_WaitForSPM();
+ 151:api.c         ****         
+ 152:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 153:api.c         ****         
+ 154:api.c         ****         SREG = saved_status;
+ 155:api.c         ****         return XB_SUCCESS;
+ 156:api.c         **** }
+ 157:api.c         **** #endif // __AVR_XMEGA__
+ 158:api.c         **** 
+ 159:api.c         **** // Higher level firmware update functions
+ 160:api.c         **** uint8_t xboot_app_temp_erase(void)
+ 161:api.c         **** {
+ 419               	.LM5:
+ 420               	.LFBB3:
+ 421 0000 CF92      		push r12
+ 422 0002 DF92      		push r13
+ 423 0004 EF92      		push r14
+ 424 0006 FF92      		push r15
+ 425 0008 CF93      		push r28
+ 426               	/* prologue: function */
+ 427               	/* frame size = 0 */
+ 428               	/* stack size = 5 */
+ 429               	.L__stack_usage = 5
+ 162:api.c         ****         uint8_t saved_status = SREG;
+ 431               	.LM6:
+ 432 000a CFB7      		in r28,__SREG__
+ 163:api.c         ****         cli();
+ 434               	.LM7:
+ 435               	/* #APP */
+ 436               	 ;  163 "api.c" 1
+ 437 000c F894      		cli
+ 438               	 ;  0 "" 2
+ 164:api.c         ****         
+ 165:api.c         ****         for (uint32_t addr = XB_APP_TEMP_START; addr < XB_APP_TEMP_END; addr += SPM_PAGESIZE)
+ 440               	.LM8:
+ 441               	/* #NOAPP */
+ 442 000e C12C      		mov r12,__zero_reg__
+ 443 0010 80E8      		ldi r24,lo8(-128)
+ 444 0012 D82E      		mov r13,r24
+ 445 0014 E12C      		mov r14,__zero_reg__
+ 446 0016 F12C      		mov r15,__zero_reg__
+ 447               	.L4:
+ 448               	.LBB2:
+ 166:api.c         ****         {
+ 167:api.c         ****                 Flash_EraseApplicationPage(addr);
+ 450               	.LM9:
+ 451 0018 C701      		movw r24,r14
+ 452 001a B601      		movw r22,r12
+ 453 001c 0E94 0000 		call SP_EraseApplicationPage
+ 168:api.c         ****                 Flash_WaitForSPM();
+ 455               	.LM10:
+ 456 0020 0E94 0000 		call SP_WaitForSPM
+ 165:api.c         ****         for (uint32_t addr = XB_APP_TEMP_START; addr < XB_APP_TEMP_END; addr += SPM_PAGESIZE)
+ 458               	.LM11:
+ 459 0024 8FEF      		ldi r24,-1
+ 460 0026 D81A      		sub r13,r24
+ 461 0028 E80A      		sbc r14,r24
+ 462 002a F80A      		sbc r15,r24
+ 463 002c C114      		cp r12,__zero_reg__
+ 464 002e D104      		cpc r13,__zero_reg__
+ 465 0030 81E0      		ldi r24,1
+ 466 0032 E806      		cpc r14,r24
+ 467 0034 F104      		cpc r15,__zero_reg__
+ 468 0036 01F4      		brne .L4
+ 469               	.LBE2:
+ 169:api.c         ****         }
+ 170:api.c         ****         
+ 171:api.c         **** #ifndef __AVR_XMEGA__
+ 172:api.c         ****         boot_rww_enable();
+ 173:api.c         **** #endif // __AVR_XMEGA__
+ 174:api.c         ****         
+ 175:api.c         **** #ifdef __AVR_XMEGA__
+ 176:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 471               	.LM12:
+ 472 0038 1092 CA01 		sts 458,__zero_reg__
+ 177:api.c         **** #endif // __AVR_XMEGA__
+ 178:api.c         ****         
+ 179:api.c         ****         SREG = saved_status;
+ 474               	.LM13:
+ 475 003c CFBF      		out __SREG__,r28
+ 180:api.c         ****         return XB_SUCCESS;
+ 181:api.c         **** }
+ 477               	.LM14:
+ 478 003e 80E0      		ldi r24,0
+ 479               	/* epilogue start */
+ 480 0040 CF91      		pop r28
+ 481 0042 FF90      		pop r15
+ 482 0044 EF90      		pop r14
+ 483 0046 DF90      		pop r13
+ 484 0048 CF90      		pop r12
+ 485 004a 0895      		ret
+ 493               	.Lscope3:
+ 494               		.section	.text.xboot_erase_application_page,"ax",@progbits
+ 497               	.global	xboot_erase_application_page
+ 499               	xboot_erase_application_page:
+  98:api.c         **** {
+ 501               	.LM15:
+ 502               	.LFBB4:
+ 503 0000 CF93      		push r28
+ 504               	/* prologue: function */
+ 505               	/* frame size = 0 */
+ 506               	/* stack size = 1 */
+ 507               	.L__stack_usage = 1
+  99:api.c         ****         uint8_t saved_status = SREG;
+ 509               	.LM16:
+ 510 0002 CFB7      		in r28,__SREG__
+ 101:api.c         ****         if (address > BOOT_SECTION_START)
+ 512               	.LM17:
+ 513 0004 6130      		cpi r22,1
+ 514 0006 7105      		cpc r23,__zero_reg__
+ 515 0008 21E0      		ldi r18,1
+ 516 000a 8207      		cpc r24,r18
+ 517 000c 9105      		cpc r25,__zero_reg__
+ 518 000e 00F4      		brsh .L8
+ 104:api.c         ****         cli();
+ 520               	.LM18:
+ 521               	/* #APP */
+ 522               	 ;  104 "api.c" 1
+ 523 0010 F894      		cli
+ 524               	 ;  0 "" 2
+ 106:api.c         ****         Flash_EraseApplicationPage(address);
+ 526               	.LM19:
+ 527               	/* #NOAPP */
+ 528 0012 0E94 0000 		call SP_EraseApplicationPage
+ 107:api.c         ****         Flash_WaitForSPM();
+ 530               	.LM20:
+ 531 0016 0E94 0000 		call SP_WaitForSPM
+ 114:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 533               	.LM21:
+ 534 001a 1092 CA01 		sts 458,__zero_reg__
+ 117:api.c         ****         SREG = saved_status;
+ 536               	.LM22:
+ 537 001e CFBF      		out __SREG__,r28
+ 118:api.c         ****         return XB_SUCCESS;
+ 539               	.LM23:
+ 540 0020 80E0      		ldi r24,0
+ 541 0022 00C0      		rjmp .L7
+ 542               	.L8:
+ 102:api.c         ****                 return XB_INVALID_ADDRESS;
+ 544               	.LM24:
+ 545 0024 83E0      		ldi r24,lo8(3)
+ 546               	.L7:
+ 547               	/* epilogue start */
+ 119:api.c         **** }
+ 549               	.LM25:
+ 550 0026 CF91      		pop r28
+ 551 0028 0895      		ret
+ 556               	.Lscope4:
+ 557               		.section	.text.xboot_write_user_signature_row,"ax",@progbits
+ 560               	.global	xboot_write_user_signature_row
+ 562               	xboot_write_user_signature_row:
+ 142:api.c         **** {
+ 564               	.LM26:
+ 565               	.LFBB5:
+ 566 0000 CF93      		push r28
+ 567               	/* prologue: function */
+ 568               	/* frame size = 0 */
+ 569               	/* stack size = 1 */
+ 570               	.L__stack_usage = 1
+ 143:api.c         ****         uint8_t saved_status = SREG;
+ 572               	.LM27:
+ 573 0002 CFB7      		in r28,__SREG__
+ 144:api.c         ****         cli();
+ 575               	.LM28:
+ 576               	/* #APP */
+ 577               	 ;  144 "api.c" 1
+ 578 0004 F894      		cli
+ 579               	 ;  0 "" 2
+ 146:api.c         ****         Flash_LoadFlashPage(data);
+ 581               	.LM29:
+ 582               	/* #NOAPP */
+ 583 0006 0E94 0000 		call SP_LoadFlashPage
+ 147:api.c         ****         Flash_EraseUserSignatureRow();
+ 585               	.LM30:
+ 586 000a 0E94 0000 		call SP_EraseUserSignatureRow
+ 148:api.c         ****         Flash_WaitForSPM();
+ 588               	.LM31:
+ 589 000e 0E94 0000 		call SP_WaitForSPM
+ 149:api.c         ****         Flash_WriteUserSignatureRow();
+ 591               	.LM32:
+ 592 0012 0E94 0000 		call SP_WriteUserSignatureRow
+ 150:api.c         ****         Flash_WaitForSPM();
+ 594               	.LM33:
+ 595 0016 0E94 0000 		call SP_WaitForSPM
+ 152:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 597               	.LM34:
+ 598 001a 1092 CA01 		sts 458,__zero_reg__
+ 154:api.c         ****         SREG = saved_status;
+ 600               	.LM35:
+ 601 001e CFBF      		out __SREG__,r28
+ 156:api.c         **** }
+ 603               	.LM36:
+ 604 0020 80E0      		ldi r24,0
+ 605               	/* epilogue start */
+ 606 0022 CF91      		pop r28
+ 607 0024 0895      		ret
+ 612               	.Lscope5:
+ 613               		.section	.text.xboot_write_application_page,"ax",@progbits
+ 618               	.global	xboot_write_application_page
+ 620               	xboot_write_application_page:
+ 122:api.c         **** {
+ 622               	.LM37:
+ 623               	.LFBB6:
+ 624 0000 CF93      		push r28
+ 625               	/* prologue: function */
+ 626               	/* frame size = 0 */
+ 627               	/* stack size = 1 */
+ 628               	.L__stack_usage = 1
+ 123:api.c         ****         uint8_t saved_status = SREG;
+ 630               	.LM38:
+ 631 0002 CFB7      		in r28,__SREG__
+ 125:api.c         ****         if (address > BOOT_SECTION_START)
+ 633               	.LM39:
+ 634 0004 6130      		cpi r22,1
+ 635 0006 7105      		cpc r23,__zero_reg__
+ 636 0008 31E0      		ldi r19,1
+ 637 000a 8307      		cpc r24,r19
+ 638 000c 9105      		cpc r25,__zero_reg__
+ 639 000e 00F4      		brsh .L12
+ 128:api.c         ****         cli();
+ 641               	.LM40:
+ 642               	/* #APP */
+ 643               	 ;  128 "api.c" 1
+ 644 0010 F894      		cli
+ 645               	 ;  0 "" 2
+ 130:api.c         ****         Flash_ProgramPage(address, data, erase);
+ 647               	.LM41:
+ 648               	/* #NOAPP */
+ 649 0012 0E94 0000 		call Flash_ProgramPage
+ 133:api.c         ****         NVM_CMD = NVM_CMD_NO_OPERATION_gc;
+ 651               	.LM42:
+ 652 0016 1092 CA01 		sts 458,__zero_reg__
+ 136:api.c         ****         SREG = saved_status;
+ 654               	.LM43:
+ 655 001a CFBF      		out __SREG__,r28
+ 137:api.c         ****         return XB_SUCCESS;
+ 657               	.LM44:
+ 658 001c 80E0      		ldi r24,0
+ 659 001e 00C0      		rjmp .L11
+ 660               	.L12:
+ 126:api.c         ****                 return XB_INVALID_ADDRESS;
+ 662               	.LM45:
+ 663 0020 83E0      		ldi r24,lo8(3)
+ 664               	.L11:
+ 665               	/* epilogue start */
+ 138:api.c         **** }
+ 667               	.LM46:
+ 668 0022 CF91      		pop r28
+ 669 0024 0895      		ret
+ 674               	.Lscope6:
+ 675               		.section	.text.xboot_app_temp_write_page,"ax",@progbits
+ 680               	.global	xboot_app_temp_write_page
+ 682               	xboot_app_temp_write_page:
+ 182:api.c         **** 
+ 183:api.c         **** uint8_t xboot_app_temp_write_page(uint32_t addr, uint8_t *data, uint8_t erase)
+ 184:api.c         **** {
+ 684               	.LM47:
+ 685               	.LFBB7:
+ 686               	/* prologue: function */
+ 687               	/* frame size = 0 */
+ 688               	/* stack size = 0 */
+ 689               	.L__stack_usage = 0
+ 185:api.c         ****         return xboot_write_application_page(addr + XB_APP_TEMP_START, data, erase);
+ 691               	.LM48:
+ 692 0000 7058      		subi r23,-128
+ 693 0002 8F4F      		sbci r24,-1
+ 694 0004 9F4F      		sbci r25,-1
+ 695 0006 0C94 0000 		jmp xboot_write_application_page
+ 697               	.Lscope7:
+ 698               	.global	api_jump_table
+ 699               		.section	.vectors,"aw",@progbits
+ 702               	api_jump_table:
+ 703 0000 58        		.byte	88
+ 704 0001 42        		.byte	66
+ 705 0002 6A        		.byte	106
+ 706 0003 01        		.byte	1
+ 707 0004 0000      		.word	gs(xboot_get_version)
+ 708 0006 0000      		.word	gs(xboot_spm_wrapper)
+ 709 0008 0000      		.word	gs(xboot_erase_application_page)
+ 710 000a 0000      		.word	gs(xboot_write_application_page)
+ 711 000c 0000      		.word	gs(xboot_write_user_signature_row)
+ 712 000e 0000      		.word	gs(xboot_app_temp_erase)
+ 713 0010 0000      		.word	gs(xboot_app_temp_write_page)
+ 715               		.text
+ 717               	.Letext0:
+ 718               		.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.4.2_992) 4.7.2"
+DEFINED SYMBOLS
+                            *ABS*:00000000 api.c
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:2      *ABS*:0000003e __SP_H__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:3      *ABS*:0000003d __SP_L__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:4      *ABS*:0000003f __SREG__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:5      *ABS*:0000003b __RAMPZ__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:6      *ABS*:00000034 __CCP__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:7      *ABS*:00000000 __tmp_reg__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:8      *ABS*:00000001 __zero_reg__
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:374    .text.xboot_get_version:00000000 xboot_get_version
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:399    .text.xboot_spm_wrapper:00000000 xboot_spm_wrapper
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:417    .text.xboot_app_temp_erase:00000000 xboot_app_temp_erase
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:499    .text.xboot_erase_application_page:00000000 xboot_erase_application_page
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:562    .text.xboot_write_user_signature_row:00000000 xboot_write_user_signature_row
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:620    .text.xboot_write_application_page:00000000 xboot_write_application_page
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:682    .text.xboot_app_temp_write_page:00000000 xboot_app_temp_write_page
+C:\Users\Matthew\AppData\Local\Temp\ccZWdWnI.s:702    .vectors:00000000 api_jump_table
+
+UNDEFINED SYMBOLS
+SP_EraseApplicationPage
+SP_WaitForSPM
+SP_LoadFlashPage
+SP_EraseUserSignatureRow
+SP_WriteUserSignatureRow
+Flash_ProgramPage

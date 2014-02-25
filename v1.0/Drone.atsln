@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Drone", "Drone\Drone.cproj", "{F65990E6-489F-439A-947A-47766661FA75}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "avrXboot", "avrXboot\avrXboot.cproj", "{F0CFA50F-910B-44B4-87F1-E7C6595BE96D}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "merge", "merge\merge.cproj", "{8F0225DA-24CB-40D0-B778-0C47AC1A576A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65990E6-489F-439A-947A-47766661FA75}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F65990E6-489F-439A-947A-47766661FA75}.Debug|AVR.Build.0 = Debug|AVR
+		{F65990E6-489F-439A-947A-47766661FA75}.Release|AVR.ActiveCfg = Release|AVR
+		{F65990E6-489F-439A-947A-47766661FA75}.Release|AVR.Build.0 = Release|AVR
+		{F0CFA50F-910B-44B4-87F1-E7C6595BE96D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F0CFA50F-910B-44B4-87F1-E7C6595BE96D}.Release|AVR.ActiveCfg = Release|AVR
+		{F0CFA50F-910B-44B4-87F1-E7C6595BE96D}.Release|AVR.Build.0 = Release|AVR
+		{8F0225DA-24CB-40D0-B778-0C47AC1A576A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{8F0225DA-24CB-40D0-B778-0C47AC1A576A}.Release|AVR.ActiveCfg = Release|AVR
+		{8F0225DA-24CB-40D0-B778-0C47AC1A576A}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

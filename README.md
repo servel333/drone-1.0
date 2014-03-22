@@ -11,6 +11,7 @@ Step1:
 
 * Download the free integrated development platform from [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx?tab=overview)
   * [Atmel Studio 6.1 update 2.0 (build 2730) Installer – Full](http://www.atmel.com/System/BaseForm.aspx?target=tcm:26-49769)
+  * [GCC Toolchain](http://www.atmel.com/images/as-avr8-toolchain-msi-snapshot-trunk-6.1.1000-win32.any.x86.msi)
 
 Step2:
 
